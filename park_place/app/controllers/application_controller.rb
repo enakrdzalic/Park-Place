@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   
+
   #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
  
  def getParksCSV
@@ -32,23 +33,21 @@ def unzipThis
             # do something with file
         end
     end
-    
-    
-
 
 end
 
-  
+
   def parse
       require 'csv'
       this_dir = File.dirname(__FILE__)
       file_path = File.join(this_dir, 'lib', 'parks.csv')
-      
+
+
       # Solution by Tom De Leu 2012
       CSV.foreach(file_path, :headers => true) do |row|
           
           parkHasWashroom = false;
-          if row[14] == "Y"
+          if row[14] = 'Y'
               parkHasWashroom = true
           end
           
