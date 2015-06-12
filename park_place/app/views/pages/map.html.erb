@@ -1,0 +1,52 @@
+<% provide(:title, "Map") %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<p> Park Place </p>
+    <style type="text/css">
+      html, body, #map-canvas { height: 90%; width: 90%; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+	    var styles = [
+	  		{
+	  		  	stylers: [
+	  		  	    { hue: "#00ffe6" },
+	  		  	    { saturation: -20 }
+	  		 	 ]
+	  		},{
+	  		 	featureType: "road",
+	    		elementType: "geometry",
+	    		stylers: [
+	    	 	    { lightness: 100 },
+	    	  		{ visibility: "simplified" }
+	    		]
+	  		},{
+	    		featureType: "road",
+	    		elementType: "labels",
+	    		stylers: [
+	     	 		{ visibility: "off" }
+	    		]
+	  		}
+		];
+
+		map.setOptions({styles: styles});
+	}
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+<div id="map-canvas"></div>
+  </body>
+</html>
