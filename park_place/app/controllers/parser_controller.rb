@@ -1,4 +1,4 @@
-class ParserController < ApplicationController
+class ParserController < ApplicationController < ActionController::Base
     require 'csv'
     
     def parse
@@ -9,14 +9,14 @@ class ParserController < ApplicationController
         # Ans by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|
             
-            parlHasWashroom = false;
+            parkHasWashroom = false;
             if row[14] = 'Y'
                 parkHasWashroom = true
             end
             
             latlng = row[7].split(',')
             
-            Park.create!(:name => row[1], :lat =>  latlng[0].to_f, :long => latlng[1].to_f, :hasWashroom => parkHasWashroom)
+            Park.create!(:name => row[1], :lat =>  latlng[0].to_f, :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom)
         end
     end
     
