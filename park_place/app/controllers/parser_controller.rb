@@ -1,8 +1,8 @@
-class ParserController < ApplicationController
-    require 'csv'
+class ParserController < ApplicationController < ActionController::Base
+    
     
     def parse
-        
+        require 'csv'
         this_dir = File.dirname(__FILE__)
         file_path = File.join(this_dir, 'lib', 'parks.csv')
         
