@@ -16,7 +16,7 @@ class ParserController < ApplicationController
             
             latlng = row[7].split(',')
             
-            Park.create!(:name => row[1], :lat =>  latlng[0].to_f, :long => latlng[1].to_f, :hasWashroom => parkHasWashroom)
+            Park.create!(:name => row[1], :lat =>  latlng[0].to_f, :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom)
         end
     end
     
