@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   
   #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
  
- def getParkCSV
+ def getParksCSV
       require 'net/ftp'
       ftp = Net::FTP.new
       ftp.connect("webftp.vancouver.ca",21)
@@ -13,15 +13,38 @@ class ApplicationController < ActionController::Base
       ftp.chdir("/opendata/")
       ftp.chdir("csv")
       ftp.passive = true
-      ftp.getbinaryfile("csv_parks_facilities.zip", "parks_csv.zip")
+      
+      this_dir = File.dirname(__FILE__)
+      file_path = File.join(this_dir, 'lib','parks_csv.zip')
+      ftp.getbinaryfile("csv_parks_facilities.zip", file_path)
   end
+ 
+
+def unzipThis
+    require 'zip'
+    require 'zip/zip'
+    
+    this_dir = File.dirname(__FILE__)
+    file_path = File.join(this_dir, 'lib','parks_csv.zip')
+    
+    Zip::ZipFile.open(file_path) do |zipfile|
+        zipfile.each do |file|
+            # do something with file
+        end
+    end
+    
+    
+
+
+end
+
   
   def parse
       require 'csv'
       this_dir = File.dirname(__FILE__)
       file_path = File.join(this_dir, 'lib', 'parks.csv')
       
-      # Ans by Tom De Leu 2012
+      # Solution by Tom De Leu 2012
       CSV.foreach(file_path, :headers => true) do |row|
           
           parkHasWashroom = false;
