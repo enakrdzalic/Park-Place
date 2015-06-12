@@ -9,7 +9,7 @@ class ParserController < ApplicationController
         # Ans by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|
             
-            parlHasWashroom = false;
+            parkHasWashroom = false;
             if row[14] = 'Y'
                 parkHasWashroom = true
             end
