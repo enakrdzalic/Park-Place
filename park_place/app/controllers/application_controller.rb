@@ -3,6 +3,19 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   
+  #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
+ 
+ def getParkCSV
+      require 'net/ftp'
+      ftp = Net::FTP.new
+      ftp.connect("webftp.vancouver.ca",21)
+      ftp.login()
+      ftp.chdir("/opendata/")
+      ftp.chdir("csv")
+      ftp.passive = true
+      ftp.getbinaryfile("csv_parks_facilities.zip", "parks_csv.zip")
+  end
+  
   def parse
       require 'csv'
       this_dir = File.dirname(__FILE__)
@@ -12,7 +25,7 @@ class ApplicationController < ActionController::Base
       CSV.foreach(file_path, :headers => true) do |row|
           
           parkHasWashroom = false;
-          if row[14] = 'Y'
+          if row[14] == "Y"
               parkHasWashroom = true
           end
           
