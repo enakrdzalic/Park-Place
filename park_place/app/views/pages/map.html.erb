@@ -42,6 +42,41 @@
 		];
 
 		map.setOptions({styles: styles});
+
+		 var contentString = '<div id="content">'+
+      		'<div id="siteNotice">'+
+      		'</div>'+
+      		'<h1 id="firstHeading" class="firstHeading">Arbutus Village Park</h1>'+
+      		'<div id="bodyContent">'+
+      		'<p><b>Arbutus Village Park</b> is a small ' +
+      		'park in beautiful Vancouver. '+
+      		'It has a playground where your little ones can come and play.</p>'+
+      		'<p>Attribution: Arbutus Village Park, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      		'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      		'(last visited June 22, 2009).</p>'+
+      		'</div>'+
+      		'</div>';
+
+      	var infowindow = new google.maps.InfoWindow({
+      		content: contentString
+  		});
+
+		var myLatlng = new google.maps.LatLng(49.249783,-123.155250);
+
+
+		var marker = new google.maps.Marker({
+     		position: myLatlng,
+     		map: map,
+    	    title: 'Arbutus Village Park',
+    	    // icon: parkIcon
+  		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+    		infowindow.open(map,marker);
+  		});
+
+  		marker.setmap(map);
+
 	}
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>
