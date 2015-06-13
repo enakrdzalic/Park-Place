@@ -36,8 +36,6 @@ class ApplicationController < ActionController::Base
     end
 
 
-
-
   end
 
 
@@ -60,10 +58,5 @@ class ApplicationController < ActionController::Base
     end
   end
 
-
-<<<<<<< HEAD
 end
-=======
 
-end
->>>>>>> Server-Side
