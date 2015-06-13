@@ -59,24 +59,6 @@
 
 		map.setOptions({styles: styles});
 
-		 var contentString = '<div id="content">'+
-      		'<div id="siteNotice">'+
-      		'</div>'+
-      		'<h1 id="firstHeading" class="firstHeading">Arbutus Village Park</h1>'+
-      		'<div id="bodyContent">'+
-      		'<p><b>Arbutus Village Park</b> is a small ' +
-      		'park in beautiful Vancouver. '+
-      		'It has a playground where your little ones can come and play.</p>'+
-      		'<p>Attribution: Arbutus Village Park, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      		'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      		'(last visited June 22, 2009).</p>'+
-      		'</div>'+
-      		'</div>';
-
-      var infowindow = new google.maps.InfoWindow({
-      		content: contentString
-  		});
-
     var markers = new Array();
     var names = <%= raw namesRuby%>;    
     var lats = <%= raw latsRuby %>;
@@ -84,6 +66,26 @@
     var haveWashroom = <%= raw haveWashroomRuby %>;
     var ids = <%= raw idsRuby %>;
     var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
 
     var i;
     for (i = 0; i < length; i++) {
@@ -97,23 +99,24 @@
 
     }
 
-    var infoWindows;
-
-    // for (i = 0; i < length; i++) {
-    //   infowindows.push(
-    //     new google.maps.InfoWindow({
-    //       content: names[i];
-    //     });
-    //   );
-    // }
+    var infoWindows = new Array();
+    var curOpen = null;
     
-    // For every park in parks use their id and iterate through this instead of var i
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
     markers.forEach(function(marker){
       google.maps.event.addListener(markers[marker.id], 'click', function() {
-            infowindow.open(map,markers[marker.id]);
+            if (curOpen){
+              curOpen.close();
+            }
+            infoWindows[marker.id].open(map,markers[marker.id]);
+            curOpen = infoWindows[marker.id];
           });
     }); 
-
 
     for (i = 0; i<length; i++){
         markers[i].setmap(map);
