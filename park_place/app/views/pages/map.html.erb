@@ -11,6 +11,21 @@
   src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
 </script>
     
+
+<% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.id)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom) %>
+  <% end -%>
+
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
@@ -58,57 +73,51 @@
       		'</div>'+
       		'</div>';
 
-      	var infowindow = new google.maps.InfoWindow({
+      var infowindow = new google.maps.InfoWindow({
       		content: contentString
   		});
 
-		//var myLatLng = new google.maps.LatLng(49.249783,-123.155250);
-
-    var myLatLngs = [[49.249783,-123.155250],
-      [49.3,-123.155250],
-      [49.4,-123.155250],
-      [49.5,-123.155250]];
-
-    var parkNames = ['Arbutus Village Park', 'Mom Village Park', 'Danya Village Park', 'Sazi Village Park'];
     var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
 
     var i;
-    for (i = 0; i < 4; i++) {
-      //alert(i);
+    for (i = 0; i < length; i++) {
   		markers.push(new google.maps.Marker({
-       		position: new google.maps.LatLng(myLatLngs[i][0], myLatLngs[i][1]),
+       		position: new google.maps.LatLng(lats[i], lngs[i]),
        		map: map,
-      	    title: parkNames[i],
-            id: i
+      	  title: names[i],
+          id: ids[i]
       	    // icon: parkIcon
     		}));
 
-      // google.maps.event.addListener(markers[i], 'click', function() {
-      //     infowindow.open(map,markers[i]);
-      //   });
-
     }
 
+    var infoWindows;
+
+    // for (i = 0; i < length; i++) {
+    //   infowindows.push(
+    //     new google.maps.InfoWindow({
+    //       content: names[i];
+    //     });
+    //   );
+    // }
+    
     // For every park in parks use their id and iterate through this instead of var i
     markers.forEach(function(marker){
       google.maps.event.addListener(markers[marker.id], 'click', function() {
             infowindow.open(map,markers[marker.id]);
-            //alert(marker.id);
           });
     }); 
 
-    // for (i = 0; i<4; i++){
-    //   google.maps.event.addListener(markers[i], 'click', function() {
-    //         infowindow.open(map,markers[i]);
-    //         alert(i);
-    //       });
-    // }
 
-
-    for (i = 0; i<4; i++){
+    for (i = 0; i<length; i++){
         markers[i].setmap(map);
     }
-      //map.data.loadGeoJson('ftp://webftp.vancouver.ca/OpenData/json/LostAnimals.json');
 
 	}
     google.maps.event.addDomListener(window, 'load', initialize);
@@ -116,5 +125,6 @@
   </head>
   <body>
 <div id="map-canvas"></div>
+
   </body>
 </html>
