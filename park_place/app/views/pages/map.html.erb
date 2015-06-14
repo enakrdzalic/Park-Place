@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<p> Park Place </p>
+    <p> Park Place </p>
     <style type="text/css">
       html, body, #map-canvas { height: 90%; width: 90%; padding: 0;}
     </style>
@@ -35,29 +35,29 @@
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
 
-	    var styles = [
-	  		{
-	  		  	stylers: [
-	  		  	    { hue: "#00ffe6" },
-	  		  	    { saturation: -20 }
-	  		 	 ]
-	  		},{
-	  		 	featureType: "road",
-	    		elementType: "geometry",
-	    		stylers: [
-	    	 	    { lightness: 100 },
-	    	  		{ visibility: "simplified" }
-	    		]
-	  		},{
-	    		featureType: "road",
-	    		elementType: "labels",
-	    		stylers: [
-	     	 		{ visibility: "off" }
-	    		]
-	  		}
-		];
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
 
-		map.setOptions({styles: styles});
+    map.setOptions({styles: styles});
 
     var markers = new Array();
     var names = <%= raw namesRuby%>;    
@@ -89,13 +89,13 @@
 
     var i;
     for (i = 0; i < length; i++) {
-  		markers.push(new google.maps.Marker({
-       		position: new google.maps.LatLng(lats[i], lngs[i]),
-       		map: map,
-      	  title: names[i],
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
           id: ids[i],
-      	  icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
-    		}));
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
 
     }
 
@@ -110,19 +110,25 @@
 
     markers.forEach(function(marker){
       google.maps.event.addListener(markers[marker.id], 'click', function() {
-            if (curOpen){
+            if (curOpen == infoWindows[marker.id]) {
               curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
             }
-            infoWindows[marker.id].open(map,markers[marker.id]);
-            curOpen = infoWindows[marker.id];
           });
     }); 
+
 
     for (i = 0; i<length; i++){
         markers[i].setmap(map);
     }
 
-	}
+  }
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
