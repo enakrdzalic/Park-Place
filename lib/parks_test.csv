@@ -1,3 +1,0 @@
-ParkID,Name,Official,StreetNumber,StreetName,EWStreet,NSStreet,GoogleMapDest,Hectare,NeighbourhoodName,NeighbourhoodURL,Advisories,Facilities,SpecialFeatures,Washrooms
-1,Arbutus Village Park,1,4202,Valley Drive,King Edward Avenue,Valley Drive,"49.249783,-123.155250",1.41,Arbutus Ridge,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,N
-2,Carnarvon Park,1,2995,W 19th Avenue,W 19th Avenue,Mackenzie Street,"49.256555,-123.171406",3.79,Arbutus Ridge,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,Y
