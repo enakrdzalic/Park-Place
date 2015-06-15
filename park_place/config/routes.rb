@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'pages/map'
 
   get 'pages/login'
+  get 'pages/testindex'
+  get 'pages/testmap'
 
   
 

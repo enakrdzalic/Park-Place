@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
     def login
     end
+
+    def testindex
+    end
+
+    def testmap
+    end
 end
