@@ -6,6 +6,13 @@
 </head>
 <body>
 <script>
+
+
+
+
+
+
+
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -45,7 +52,7 @@
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '1458428974467904',
-    cookie     : true,  // enable cookies to allow the server to access 
+    cookie     : true,  // enable cookies to allow the server to access
                         // the session
     xfbml      : true,  // parse social plugins on this page
     version    : 'v2.2' // use version 2.2
@@ -86,9 +93,10 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
+        window.location="http://localhost:3000/pages/map";
     });
    
-     window.location="http://localhost:3000/pages/map";
+
     
   }
 </script>
@@ -99,10 +107,8 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-<!--</fb:login-button>
-	-->
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
+
+<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 
 <div id="status">
 </div>
