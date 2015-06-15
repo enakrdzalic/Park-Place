@@ -2,23 +2,25 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-  	<h1> Park Place </h1>
-    <style type="text/css">
-      html, body, #map-canvas { height: 90%; width: 90%; padding: 0;}
-    </style>
-    <script type="text/javascript"
-     src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
-    </script>
-    
 
-<% namesRuby = Array.new
-    latsRuby = Array.new
-    lngsRuby = Array.new
-    haveWashroomRuby = Array.new
-    idsRuby = Array.new
-    %>
-<% Park.all.each do |p| 
+<head>
+  <p> Park Place </p>
+  <style type="text/css">
+      html, body, #map-canvas { height: 90%; width: 90%; padding: 0;}
+  </style>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+  </script>
+
+
+  <% namesRuby = Array.new
+     latsRuby = Array.new
+     lngsRuby = Array.new
+     haveWashroomRuby = Array.new
+     idsRuby = Array.new
+  %>
+  <% Park.all.each do |p|
+
     idsRuby.push(p.id)
     namesRuby.push(p.name)
     latsRuby.push(p.lat)
@@ -26,121 +28,132 @@
     haveWashroomRuby.push(p.hasWashroom) %>
   <% end -%>
 
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: 49.261226, lng: -123.1139268},
-          zoom: 12
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
+  <script type="text/javascript">
 
-      var styles = [
-        {
-            stylers: [
-                { hue: "#00ffe6" },
-                { saturation: -20 }
-           ]
-        },{
-          featureType: "road",
-          elementType: "geometry",
-          stylers: [
-              { lightness: 100 },
-              { visibility: "simplified" }
-          ]
-        },{
-          featureType: "road",
-          elementType: "labels",
-          stylers: [
-            { visibility: "off" }
-          ]
+    updateDataCount = 0;
+
+    function promptPassword(){
+        var password = prompt("Please Enter Admin Password","");
+
+        if (password == 'Ihategit' && updateDataCount == 0){
+            updateDataCount++;
+            <% updateData -%>
+            alert("Data Updated")
+            initialize()
         }
-    ];
 
-    map.setOptions({styles: styles});
-
-    var markers = new Array();
-    var names = <%= raw namesRuby%>;    
-    var lats = <%= raw latsRuby %>;
-    var lngs = <%= raw lngsRuby %>;
-    var haveWashroom = <%= raw haveWashroomRuby %>;
-    var ids = <%= raw idsRuby %>;
-    var length = names.length;
-
-    function hasWashroom(index) {
-      if (haveWashroom[index] == 1) return 'yes';
-      else return 'no';
+        else if (updateDataCount != 0){
+            alert("Data can only be refreshed once per browser session. Please refresh your browser.")
+        }
+        else {
+            alert("Incorrect Password")
+        }
     }
+      function initialize() {
+          var mapOptions = {
+              center: { lat: 49.261226, lng: -123.1139268},
+              zoom: 12
+          };
+          var map = new google.maps.Map(document.getElementById('map-canvas'),
+                  mapOptions);
+          var styles = [
+              {
+                  stylers: [
+                      { hue: "#00ffe6" },
+                      { saturation: -20 }
+                  ]
+              },{
+                  featureType: "road",
+                  elementType: "geometry",
+                  stylers: [
+                      { lightness: 100 },
+                      { visibility: "simplified" }
+                  ]
+              },{
+                  featureType: "road",
+                  elementType: "labels",
+                  stylers: [
+                      { visibility: "off" }
+                  ]
+              }
+          ];
+          map.setOptions({styles: styles});
+          var markers = new Array();
+          var names = <%= raw namesRuby%>;
+          var lats = <%= raw latsRuby %>;
+          var lngs = <%= raw lngsRuby %>;
+          var haveWashroom = <%= raw haveWashroomRuby %>;
+          var ids = <%= raw idsRuby %>;
+          var length = names.length;
+          function hasWashroom(index) {
+              if (haveWashroom[index] == 1) return 'yes';
+              else return 'no';
+          }
+          function getName(index) {
+              return names[index];
+          }
+          function getContentString(index){
+              return '<div id="content">'+
+                      '<div id="siteNotice">'+
+                      '</div>'+
+                      '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+                      '<div id="bodyContent">'+
+                      'Washroom on site: ' + hasWashroom(index) +
+                      '</div>'+
+                      '</div>';
+          }
+          var i;
+          for (i = 0; i < length; i++) {
+              markers.push(new google.maps.Marker({
+                  position: new google.maps.LatLng(lats[i], lngs[i]),
+                  map: map,
+                  title: names[i],
+                  id: ids[i],
+                  icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+              }));
+          }
+          var infoWindows = new Array();
+          var curOpen = null;
 
-    function getName(index) {
-      return names[index];
-    }
-
-    function getContentString(index){
-      return '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
-          '<div id="bodyContent">'+
-          'Washroom on site: ' + hasWashroom(index) +
-          '</div>'+
-          '</div>';
-    }
-
-    var i;
-    for (i = 0; i < length; i++) {
-      markers.push(new google.maps.Marker({
-          position: new google.maps.LatLng(lats[i], lngs[i]),
-          map: map,
-          title: names[i],
-          id: ids[i],
-          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
-        }));
-
-    }
-
-    var infoWindows = new Array();
-    var curOpen = null;
-    
-    for (i = 0; i < length; i++) {
-        infoWindows.push(new google.maps.InfoWindow({
-          content: getContentString(i)
-        }));
-    }
-
-    markers.forEach(function(marker){
-      google.maps.event.addListener(markers[marker.id], 'click', function() {
-            if (curOpen == infoWindows[marker.id]) {
-              curOpen.close();
-              curOpen = null;
-            } else {
-              if (curOpen){
-                curOpen.close();
-              } 
-                infoWindows[marker.id].open(map,markers[marker.id]);
-                curOpen = infoWindows[marker.id];
-            }
+          for (i = 0; i < length; i++) {
+              infoWindows.push(new google.maps.InfoWindow({
+                  content: getContentString(i)
+              }));
+          }
+          markers.forEach(function(marker){
+              google.maps.event.addListener(markers[marker.id], 'click', function() {
+                  if (curOpen == infoWindows[marker.id]) {
+                      curOpen.close();
+                      curOpen = null;
+                  } else {
+                      if (curOpen){
+                          curOpen.close();
+                      }
+                      infoWindows[marker.id].open(map,markers[marker.id]);
+                      curOpen = infoWindows[marker.id];
+                  }
+              });
           });
-    }); 
+          for (i = 0; i<length; i++){
+              markers[i].setmap(map);
+          }
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
 
 
-    for (i = 0; i<length; i++){
-        markers[i].setmap(map);
-    }
-
-  }
-    google.maps.event.addDomListener(window, 'load', initialize);
+<body>
 
 
+<form>
+  <input type="button" onclick= "promptPassword()" value="Update Data"/>
+</form>
 
-    </script>
-  </head>
 
- 
-  <body>
-
-<button type="button" onclick="alert('Congratulations! You can click a button!')">Update Data</button>
-
+<!--
+  Facebook SDK for Javascript
+   <!-- ;alert('Data Updated!');initialize() -->
 
 <!--
   Facebook SDK for Javascript
@@ -165,30 +178,26 @@
     };
     </script>
 
-
-
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1458428974467904";
-  fjs.parentNode.insertBefore(js, fjs);
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1458428974467904";
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!--
   Facebook logout button
 -->
 <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
- 
+
 </body>
 
 
-  <body>
+<body>
 <div id="map-canvas"></div>
 
-  </body>
-
+</body>
 
 </html>
