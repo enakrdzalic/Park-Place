@@ -172,7 +172,9 @@ updateDataCount = 0;
         else if (password == correctPassword && updateDataCount != 0){
             alert("Data can only be refreshed once per browser session. Please refresh your browser.");
         }
-        else if (password == null){}
+        else if (password == null){
+          return;
+        }
         else {
             alert("Incorrect Password");
         }
@@ -188,8 +190,8 @@ updateDataCount = 0;
 	// 	})
 	// }
 
-	// function log_out(){
-	// 	window.location="http://localhost:3000/pages/testindex";
+	function log_out(){
+		window.location="http://localhost:3000/pages/testindex";
 
 		// FB.logout(function(response) {
   //       	// Person is now logged out
@@ -197,7 +199,7 @@ updateDataCount = 0;
   //       	alert("Tryna log out");
   //       	window.location="http://localhost:3000/pages/testindex";
   //   	});
-    //}
+    }
 
 
 //     window.fbAsyncInit = function() {
