@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
+    </style>
+
+			<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+</script>
+
+
+<% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.id)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom) %>
+  <% end -%>
+
+    <script type="text/javascript">
+
+    // MAP CODE
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
+
+    map.setOptions({styles: styles});
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    var i;
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+    }
+
+    var infoWindows = new Array();
+    var curOpen = null;
+    
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+
+
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+
+
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	</head>
+
+
+<script> 
+
+// REFRESH DATA BUTTON CODE
+
+updateDataCount = 0;
+
+    function promptPassword(){
+        var password = prompt("Please Enter Admin Password","");
+        var correctPassword = 'Ihategit';
+
+
+        if (password == correctPassword && updateDataCount == 0){
+            updateDataCount++;
+            <% updateData -%>
+            alert("Data Updated");
+            initialize();
+        }
+
+        else if (password == correctPassword && updateDataCount != 0){
+            alert("Data can only be refreshed once per browser session. Please refresh your browser.");
+        }
+        else if (password == null){}
+        else {
+            alert("Incorrect Password");
+        }
+    }
+
+
+// FACEBOOK LOGOUT BUTTON
+
+	// function logoutFacebook() {
+	// 	alert("You are tryna log out");
+	// 	FB.logout(function(response){
+	// 		window.location="http://localhost:3000/pages/testindex";
+	// 	})
+	// }
+
+	function log_out(){
+		window.location="http://localhost:3000/pages/testindex";
+
+		// FB.logout(function(response) {
+  //       	// Person is now logged out
+  //       	FB.Auth.setAuthResponse(null, 'unknown');
+  //       	alert("Tryna log out");
+  //       	window.location="http://localhost:3000/pages/testindex";
+  //   	});
+    }
+
+
+    window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1458428974467904',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+}
+
+// Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+
+</script>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index.html">Park Place</a></strong> by 404: Team Name Not Found</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="#" onclick= "log_out()">Log Out</a></li>
+						<li><a href="#" onclick= "promptPassword()">Refresh Data</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<!-- 	<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Park Place</h2>
+					</header>
+       </div>
+			</section> -->
+		
+		<div id="map-canvas"></div>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 404: Team Name Not Found</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
