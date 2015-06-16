@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
-	def Map
-    end
+	 def Map
+     end
 
-    def login
-    end
+     def login
+     end
 
     def testindex
     end
