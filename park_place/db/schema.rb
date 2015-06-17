@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 20150611232015) do
 
   create_table "parks", force: :cascade do |t|
     t.string   "name",        limit: 255
-    t.string   "lat",         limit: 255
-    t.string   "lng",         limit: 255
+    t.float    "lat",         limit: 24
+    t.float    "lng",         limit: 24
     t.boolean  "hasWashroom", limit: 1,   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
