@@ -270,10 +270,28 @@ updateDataCount = 0;
     });
   }
 
+function checkLoginStatus() {
+  alert("inside checkLoginStatus");
+  FB.getLoginStatus(function(response) {
+    alert("inside FB.getLoginStatus");
+    if (response.status === 'not_authorized') {
+     alert("you are logged out");
+     log_out();
+  }
+  else if (response.status === 'unknown') {
+     alert("you are logged out");
+     log_out();
+  }
+  else {
+
+  }
+});
+}
 
 </script>
 
-	<body>
+<!-- 	<body> -->
+<body onload="checkLoginStatus()">
 
 		<!-- Header -->
 			<header id="header">
