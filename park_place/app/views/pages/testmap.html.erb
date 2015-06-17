@@ -271,15 +271,13 @@ updateDataCount = 0;
   }
 
 function checkLoginStatus() {
-  alert("inside checkLoginStatus");
   FB.getLoginStatus(function(response) {
-    alert("inside FB.getLoginStatus");
     if (response.status === 'not_authorized') {
-     alert("you are logged out");
+     alert("Please log in and authorize Park Place");
      log_out();
   }
   else if (response.status === 'unknown') {
-     alert("you are logged out");
+     alert("Please log in and authorize Park Place");
      log_out();
   }
   else {
