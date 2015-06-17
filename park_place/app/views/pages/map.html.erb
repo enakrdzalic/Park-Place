@@ -1,17 +1,28 @@
-<% provide(:title, "Map") %>
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-<head>
-  <p> Park Place </p>
-  <style type="text/css">
-      html, body, #map-canvas { height: 90%; width: 90%; padding: 0;}
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
     </style>
-    <script type="text/javascript"
+
+			<script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
 </script>
-      
+
 
 <% namesRuby = Array.new
     latsRuby = Array.new
@@ -27,176 +38,296 @@
     haveWashroomRuby.push(p.hasWashroom) %>
   <% end -%>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
 
-    updateDataCount = 0;
+    // MAP CODE
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
+
+    map.setOptions({styles: styles});
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    var i;
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+    }
+
+    var infoWindows = new Array();
+    var curOpen = null;
+    
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+
+
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+
+
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	</head>
+
+
+<script> 
+
+// REFRESH DATA BUTTON CODE
+
+updateDataCount = 0;
 
     function promptPassword(){
         var password = prompt("Please Enter Admin Password","");
+        var correctPassword = 'Ihategit';
 
-        if (password == 'Ihategit' && updateDataCount == 0){
+
+        if (password == correctPassword && updateDataCount == 0){
             updateDataCount++;
             <% updateData -%>
-            alert("Data Updated")
-            initialize()
+            alert("Data Updated");
+            initialize();
         }
 
-        else if (password == 'Ihategit' && updateDataCount != 0){
-            alert("Data can only be refreshed once per browser session. Please refresh your browser.")
+        else if (password == correctPassword && updateDataCount != 0){
+            alert("Data can only be refreshed once per browser session. Please refresh your browser.");
+        }
+        else if (password == null){
+          return;
         }
         else {
-            alert("Incorrect Password")
+            alert("Incorrect Password");
         }
     }
-      function initialize() {
-          var mapOptions = {
-              center: { lat: 49.261226, lng: -123.1139268},
-              zoom: 12
-          };
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-                  mapOptions);
-          var styles = [
-              {
-                  stylers: [
-                      { hue: "#00ffe6" },
-                      { saturation: -20 }
-                  ]
-              },{
-                  featureType: "road",
-                  elementType: "geometry",
-                  stylers: [
-                      { lightness: 100 },
-                      { visibility: "simplified" }
-                  ]
-              },{
-                  featureType: "road",
-                  elementType: "labels",
-                  stylers: [
-                      { visibility: "off" }
-                  ]
-              }
-          ];
-          map.setOptions({styles: styles});
-          var markers = new Array();
-          var names = <%= raw namesRuby%>;
-          var lats = <%= raw latsRuby %>;
-          var lngs = <%= raw lngsRuby %>;
-          var haveWashroom = <%= raw haveWashroomRuby %>;
-          var ids = <%= raw idsRuby %>;
-          var length = names.length;
-          function hasWashroom(index) {
-              if (haveWashroom[index] == 1) return 'yes';
-              else return 'no';
-          }
-          function getName(index) {
-              return names[index];
-          }
-          function getContentString(index){
-              return '<div id="content">'+
-                      '<div id="siteNotice">'+
-                      '</div>'+
-                      '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
-                      '<div id="bodyContent">'+
-                      'Washroom on site: ' + hasWashroom(index) +
-                      '</div>'+
-                      '</div>';
-          }
-          var i;
-          for (i = 0; i < length; i++) {
-              markers.push(new google.maps.Marker({
-                  position: new google.maps.LatLng(lats[i], lngs[i]),
-                  map: map,
-                  title: names[i],
-                  id: ids[i],
-                  icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
-              }));
-          }
-          var infoWindows = new Array();
-          var curOpen = null;
 
-          for (i = 0; i < length; i++) {
-              infoWindows.push(new google.maps.InfoWindow({
-                  content: getContentString(i)
-              }));
-          }
-          markers.forEach(function(marker){
-              google.maps.event.addListener(markers[marker.id], 'click', function() {
-                  if (curOpen == infoWindows[marker.id]) {
-                      curOpen.close();
-                      curOpen = null;
-                  } else {
-                      if (curOpen){
-                          curOpen.close();
-                      }
-                      infoWindows[marker.id].open(map,markers[marker.id]);
-                      curOpen = infoWindows[marker.id];
-                  }
-              });
-          });
-          for (i = 0; i<length; i++){
-              markers[i].setmap(map);
-          }
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
-</head>
+// FACEBOOK LOGOUT FUNCTIONALITY
 
+	function log_out(){
+		window.location="http://localhost:3000/pages/index";
+    }
 
-<body>
+//  Facebook SDK Init 
+      
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
 
+    }
+  }
 
-<form>
-  <input type="button" onclick= "promptPassword()" value="Update Data"/>
-</form>
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
 
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1458428974467904',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
 
-<!--
-  Facebook SDK for Javascript
-   <!-- ;alert('Data Updated!');initialize() -->
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
 
-<!--
-  Facebook SDK for Javascript
--->
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
 
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : 'myappid',
-            xfbml      : true,
-            version    : 'v2.2'
-        });
+  };
 
-        FB.Event.subscribe('auth.logout', function(response) {
-            window.top.location = "http://localhost:3000/pages/login";
-        });
-
-        FB.getLoginStatus(function(response) {
-
-        });
-
-    };
-    </script>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+  // Load the SDK asynchronously
+  (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1458428974467904";
+    js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));
 
-<!--
-  Facebook logout button
--->
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    //window.location="http://localhost:3000/pages/testmap";
 
-</body>
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
+function checkLoginStatus() {
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'not_authorized') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else if (response.status === 'unknown') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else {}
+  });
+}
+
+</script>
+
+<!-- 	<body> -->
+<body onload="checkLoginStatus()">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a>Park Place</a></strong></h1>
 
 
-<body>
-<div id="map-canvas"></div>
+				<nav id="nav">
+					<ul>
+						<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
+          onlogin="log_out();"
+          style=position:absolute;left:138px;bottom:8px;></div>
+						<li><a href="#" onclick= "promptPassword()">Refresh Data</a></li>
+					</ul>
+				</nav>
+			</header>
 
-</body>
+		<!-- Main -->
+		<!-- 	<section id="main" class="wrapper">
+				<div class="container">
 
+					<header class="major special">
+						<h2>Park Place</h2>
+					</header>
+       </div>
+			</section> -->
+		
+		<div id="map-canvas"></div>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 404: Team Name Not Found</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
 </html>
