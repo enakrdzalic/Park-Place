@@ -23,15 +23,14 @@
   src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
 </script>
 
-
-<% namesRuby = Array.new
+    <% namesRuby = Array.new
     latsRuby = Array.new
     lngsRuby = Array.new
     haveWashroomRuby = Array.new
     idsRuby = Array.new
     %>
 <% Park.all.each do |p| 
-    idsRuby.push(p.id)
+    idsRuby.push(p.index)
     namesRuby.push(p.name)
     latsRuby.push(p.lat)
     lngsRuby.push(p.lng)
@@ -160,19 +159,18 @@ updateDataCount = 0;
     function promptPassword(){
         var password = prompt("Please Enter Admin Password","");
         var correctPassword = 'Ihategit';
+        updateDataCount++;
 
-
-        if (password == correctPassword && updateDataCount == 0){
-            updateDataCount++;
-            <% updateData -%>
-            alert("Data Updated");
-            initialize();
+        if (password === correctPassword){
+            <%= updateData %>
+            alert("Data is being updated...");
+            window.location.reload();
         }
 
-        else if (password == correctPassword && updateDataCount != 0){
+        else if (password === correctPassword){
             alert("Data can only be refreshed once per browser session. Please refresh your browser.");
         }
-        else if (password == null){
+        else if (password === null){
           return;
         }
         else {
