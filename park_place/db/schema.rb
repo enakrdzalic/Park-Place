@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150611232015) do
+ActiveRecord::Schema.define(version: 20150617223520) do
 
   create_table "parks", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150611232015) do
     t.boolean  "hasWashroom", limit: 1,   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "index",       limit: 4
   end
 
   create_table "users", force: :cascade do |t|
