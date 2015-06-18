@@ -67,10 +67,15 @@ class ApplicationController < ActionController::Base
   end
 
   def updateData
-    Park.delete_all
-    getParksCSV
-    unzipThis
-    parse
+
+    canUpdate = params[:canUpdate]
+    if canUpdate
+      Park.delete_all
+      getParksCSV
+      unzipThis
+      parse
+      render :nothing => true
+    end
   end
 
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'pages/index'
 
   
+  post '/ajax/update' => 'application#updateData'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
