@@ -23,15 +23,14 @@
   src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
 </script>
 
-
-<% namesRuby = Array.new
+    <% namesRuby = Array.new
     latsRuby = Array.new
     lngsRuby = Array.new
     haveWashroomRuby = Array.new
     idsRuby = Array.new
     %>
 <% Park.all.each do |p| 
-    idsRuby.push(p.id)
+    idsRuby.push(p.index)
     namesRuby.push(p.name)
     latsRuby.push(p.lat)
     lngsRuby.push(p.lng)
@@ -155,23 +154,30 @@
 
 // REFRESH DATA BUTTON CODE
 
-updateDataCount = 0;
+//updateDataCount = 0;
 
-    function promptPassword(){
+function promptPassword(){
+        // AJAX script here
+
         var password = prompt("Please Enter Admin Password","");
         var correctPassword = 'Ihategit';
 
+        if (password == correctPassword){
+            var canUpdate = true;
 
-        if (password == correctPassword && updateDataCount == 0){
-            updateDataCount++;
-            <% updateData -%>
-            alert("Data Updated");
-            initialize();
-        }
+            $.ajax({
+                url: '/ajax/update',
+                type: 'POST',
+                dataType: 'json',
+                data: {canUpdate: canUpdate},
+            }).done(function(){
+              
+            });
 
-        else if (password == correctPassword && updateDataCount != 0){
-            alert("Data can only be refreshed once per browser session. Please refresh your browser.");
-        }
+            alert('Data is being updated...')
+            window.location.reload();
+            }
+
         else if (password == null){
           return;
         }
@@ -179,6 +185,7 @@ updateDataCount = 0;
             alert("Incorrect Password");
         }
     }
+  
 
 // FACEBOOK LOGOUT FUNCTIONALITY
 
@@ -300,7 +307,7 @@ function checkLoginStatus() {
             <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
           onlogin="log_out();"
           style=position:absolute;left:138px;bottom:8px;></div>
-						<li><a href="#" onclick= "promptPassword()">Refresh Data</a></li>
+						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
 					</ul>
 				</nav>
 			</header>
