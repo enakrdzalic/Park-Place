@@ -212,5 +212,5 @@ ParkID,Name,Official,StreetNumber,StreetName,EWStreet,NSStreet,GoogleMapDest,Hec
 240,Park Site at South East False Creek,0,215,W 1st Avenue,W 1st Avenue,Columbia Street,"49.270869,-123.110533",0.95,Mount Pleasant,http://vancouver.ca/community_profiles/mount_pleasant/index.htm,N,Y,N,N
 241,Habitat Island,0,1616,Columbia Street,,,"49.272210,-123.110791",0.60,Mount Pleasant,http://vancouver.ca/community_profiles/mount_pleasant/index.htm,N,N,N,N
 244,Fraser River Trail,1,9149,Hudson Street,SW Marine Drive,Hudson Street,"49.200357,-123.135862",0.35,Marpole,http://vancouver.ca/community_profiles/marpole/index.htm,N,N,N,N
-245,Trillium Park Site,0,600,National Avenue,National Avenue,Thornton Street,"49.275015,-123.093116",3.05,Strathcona,http://vancouver.ca/community_profiles/strathcona/index.htm,N,Y,N,Y
+245,Trillium Park,0,600,National Avenue,National Avenue,Thornton Street,"49.275015,-123.093116",3.05,Strathcona,http://vancouver.ca/community_profiles/strathcona/index.htm,N,Y,N,Y
 246,Creekway Park,1,2901,E Hastings Street,McGill Street,,"49.288336,-123.036982",8.00,Hastings-Sunrise,http://vancouver.ca/community_profiles/hastings-sunrise/index.htm,N,N,N,N

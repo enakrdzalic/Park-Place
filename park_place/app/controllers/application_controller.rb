@@ -47,7 +47,6 @@ class ApplicationController < ActionController::Base
     file_path = File.join(this_dir, 'lib', 'parks.csv')
 
     temp_index = 0
-
     # Solution by Tom De Leu 2012
     CSV.foreach(file_path, :headers => true) do |row|
 
@@ -58,16 +57,15 @@ class ApplicationController < ActionController::Base
 
       latlng = row[7].split(',')
 
-      Park.create!(:name => row[1], :lat =>  latlng[0].to_f, 
+    Park.create!(:name => row[1], :lat =>  latlng[0].to_f, 
                 :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom,
                 :index => temp_index)
-      temp_index+=1
+              temp_index+=1
     end
 
   end
 
   def updateData
-
     canUpdate = params[:canUpdate]
     if canUpdate
       Park.delete_all
@@ -76,7 +74,9 @@ class ApplicationController < ActionController::Base
       parse
       render :nothing => true
     end
+
   end
+
 
 end
 

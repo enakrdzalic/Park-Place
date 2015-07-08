@@ -41,7 +41,7 @@
 
     // MAP CODE
 
-      function initialize() {
+function initMap() {
         var mapOptions = {
           center: { lat: 49.261226, lng: -123.1139268},
           zoom: 12
@@ -73,34 +73,10 @@
 
     map.setOptions({styles: styles});
 
-    var markers = new Array();
-    var names = <%= raw namesRuby%>;    
-    var lats = <%= raw latsRuby %>;
-    var lngs = <%= raw lngsRuby %>;
-    var haveWashroom = <%= raw haveWashroomRuby %>;
-    var ids = <%= raw idsRuby %>;
-    var length = names.length;
+    return map;
+}
 
-    function hasWashroom(index) {
-      if (haveWashroom[index] == 1) return 'yes';
-      else return 'no';
-    }
-
-    function getName(index) {
-      return names[index];
-    }
-
-    function getContentString(index){
-      return '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
-          '<div id="bodyContent">'+
-          'Washroom on site: ' + hasWashroom(index) +
-          '</div>'+
-          '</div>';
-    }
-
+function makeMarkers(length, markers, lats, lngs, map, names, ids) {
     var i;
     for (i = 0; i < length; i++) {
       markers.push(new google.maps.Marker({
@@ -112,6 +88,12 @@
         }));
 
     }
+  }
+
+function initMarkers(length, markers, lats, lngs, map, names, ids) {
+    var i;
+    
+    makeMarkers(length, markers, lats, lngs, map, names, ids);
 
     var infoWindows = new Array();
     var curOpen = null;
@@ -141,9 +123,44 @@
     for (i = 0; i<length; i++){
         markers[i].setmap(map);
     }
+}
 
+      function initialize() {
+        
+        var map = initMap();
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    initMarkers(length, markers, lats, lngs, map, names, ids);
 
   }
+
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
