@@ -271,6 +271,9 @@ function promptPassword(){
     //window.location="http://localhost:3000/pages/testmap";
 
     FB.api('/me', function(response) {
+        var userName = response.first_name;
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+//        alert("Your name is " + userName);
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
@@ -287,7 +290,9 @@ function checkLoginStatus() {
      alert("Please log in and authorize Park Place.");
      log_out();
   }
-  else {}
+  else {
+
+    }
   });
 }
 
@@ -298,7 +303,7 @@ function checkLoginStatus() {
 
 		<!-- Header -->
 			<header id="header">
-				<h1><strong><a>Park Place</a></strong></h1>
+				<h1 id = "h1"><strong><a></a></strong></h1>
 
 
 				<nav id="nav">
@@ -325,8 +330,29 @@ function checkLoginStatus() {
 		<div id="map-canvas"></div>
 
 
+        <br>
+        <br>
 
-		<!-- Footer -->
+        <!-- Like and Share :) -->
+
+        <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1458428974467904";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/dovbushdancers" data-send="true" data-width="450" data-show-faces="true"></div>
+        </body>
+
+
+
+
+
+        <!-- Footer -->
 			<footer id="footer">
 				<div class="container">
 					<ul class="copyright">
