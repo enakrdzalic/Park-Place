@@ -13,15 +13,15 @@
 
 ActiveRecord::Schema.define(version: 20150708234456) do
 
-  create_table "favorites", force: :cascade do |t|
+  create_table "favourites", force: :cascade do |t|
     t.integer  "user_id",    limit: 4
     t.integer  "park_id",    limit: 4
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
 
-  add_index "favorites", ["park_id"], name: "index_favorites_on_park_id", using: :btree
-  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id", using: :btree
+  add_index "favourites", ["park_id"], name: "index_favourites_on_park_id", using: :btree
+  add_index "favourites", ["user_id"], name: "index_favourites_on_user_id", using: :btree
 
   create_table "parks", force: :cascade do |t|
     t.integer  "parkID",        limit: 4
