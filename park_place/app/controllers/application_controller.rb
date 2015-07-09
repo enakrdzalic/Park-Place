@@ -55,12 +55,17 @@ class ApplicationController < ActionController::Base
       if row[14] == "Y"
         parkHasWashroom = true
       end
-
+      
+      parkIsLarge = false;
+      if row[8].to_f >= 1.0
+          parkIsLarge = true;
+      end
+      
       latlng = row[7].split(',')
 
       Park.create!(:name => row[1], :lat =>  latlng[0].to_f, 
                 :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom,
-                :index => temp_index)
+                   :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9])
       temp_index+=1
     end
 

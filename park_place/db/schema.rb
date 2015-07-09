@@ -24,10 +24,14 @@ ActiveRecord::Schema.define(version: 20150708234456) do
   add_index "favorites", ["user_id"], name: "index_favorites_on_user_id", using: :btree
 
   create_table "parks", force: :cascade do |t|
-    t.string   "name",        limit: 255
-    t.float    "lat",         limit: 24
-    t.float    "lng",         limit: 24
-    t.boolean  "hasWashroom", limit: 1,   default: false
+    t.integer  "parkID",        limit: 4
+    t.integer  "index",         limit: 4
+    t.string   "name",          limit: 255
+    t.float    "lat",           limit: 24
+    t.float    "lng",           limit: 24
+    t.string   "neighbourhood", limit: 255
+    t.boolean  "hasWashroom",   limit: 1,   default: false
+    t.boolean  "isLarge",       limit: 1,   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
