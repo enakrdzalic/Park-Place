@@ -41,7 +41,7 @@
 
     // MAP CODE
 
-      function initialize() {
+function initMap() {
         var mapOptions = {
           center: { lat: 49.261226, lng: -123.1139268},
           zoom: 12
@@ -73,6 +73,49 @@
 
     map.setOptions({styles: styles});
 
+    return map;
+}
+
+function addMarkersToMap(map) {
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+  }
+
+  function addMarkerListeners(map, markers, curOpen, infoWindows) {
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+}
+
+function makeMarkers(length, markers, lats, lngs, map, names, ids) {
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+      }
+    }
+
+  function initialize() {
+        
+    var map = initMap();
+
     var markers = new Array();
     var names = <%= raw namesRuby%>;    
     var lats = <%= raw latsRuby %>;
@@ -100,50 +143,27 @@
           '</div>'+
           '</div>';
     }
-
     var i;
-    for (i = 0; i < length; i++) {
-      markers.push(new google.maps.Marker({
-          position: new google.maps.LatLng(lats[i], lngs[i]),
-          map: map,
-          title: names[i],
-          id: ids[i],
-          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
-        }));
-
-    }
+    
+    makeMarkers(length, markers, lats, lngs, map, names, ids);
 
     var infoWindows = new Array();
     var curOpen = null;
     
+    function makeInfoWindows(markers, infoWindows, map, curOpen) {
     for (i = 0; i < length; i++) {
         infoWindows.push(new google.maps.InfoWindow({
           content: getContentString(i)
         }));
     }
-
-    markers.forEach(function(marker){
-      google.maps.event.addListener(markers[marker.id], 'click', function() {
-            if (curOpen == infoWindows[marker.id]) {
-              curOpen.close();
-              curOpen = null;
-            } else {
-              if (curOpen){
-                curOpen.close();
-              } 
-                infoWindows[marker.id].open(map,markers[marker.id]);
-                curOpen = infoWindows[marker.id];
-            }
-          });
-    }); 
-
-
-    for (i = 0; i<length; i++){
-        markers[i].setmap(map);
-    }
-
-
   }
+  makeInfoWindows(markers, infoWindows, map, curOpen);
+    
+  addMarkerListeners(map, markers, curOpen, infoWindows);
+
+  addMarkersToMap(map);
+  }
+
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
