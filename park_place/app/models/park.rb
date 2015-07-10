@@ -1,3 +1,4 @@
 class Park < ActiveRecord::Base
-    # rails knows about all the things in the Park database columns
+    has_many :favourites
+    has_many :users, through:  :favourites
 end
