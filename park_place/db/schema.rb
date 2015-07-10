@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 20150708234456) do
     t.float    "lat",           limit: 24
     t.float    "lng",           limit: 24
     t.string   "neighbourhood", limit: 255
-    t.boolean  "hasWashroom",   limit: 1,   default: false
-    t.boolean  "isLarge",       limit: 1,   default: false
+    t.string   "hasWashroom",   limit: 255, default: "0"
+    t.string   "isLarge",       limit: 255, default: "0"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
