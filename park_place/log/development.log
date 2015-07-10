@@ -11053,3 +11053,3646 @@ Processing by PagesController#map as HTML
   [1m[36mPark Load (0.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
   Rendered pages/map.html.erb within layouts/application (146.1ms)
 Completed 200 OK in 155ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-07-08 16:34:58 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (125.1ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-08 16:35:10 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (270.2ms)
+Completed 200 OK in 289ms (Views: 285.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 17:56:29 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (36.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (405.3ms)
+Completed 200 OK in 493ms (Views: 427.3ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-09 17:56:30 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 18:00:43 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (118.1ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-09 18:00:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-09 18:00:43 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-09 18:00:43 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-09 18:00:44 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 18:02:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (634.5ms)
+Completed 200 OK in 705ms (Views: 688.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-09 18:02:13 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (181.1ms)
+Completed 200 OK in 186ms (Views: 184.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-09 18:03:09 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 18:04:44 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-09 18:04:45 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 18:05:49 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (170.1ms)
+Completed 200 OK in 183ms (Views: 181.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-09 18:05:50 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-09 23:08:53 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (19.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (491.4ms)
+Completed 200 OK in 566ms (Views: 533.4ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-07-10 00:00:04 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (333.4ms)
+Completed 200 OK in 422ms (Views: 406.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pic09-e7eefc88f52134e4b840a1c46fdf15c8ddda803202a01fc9a12d2b759fbb0a59.jpg" for 127.0.0.1 at 2015-07-10 00:00:05 -0700
+
+
+Started GET "/assets/pic08-ec3e024a0c0cb3f5536a06787df08d81049c0e3f592b344aec93219ce5d97338.jpg" for 127.0.0.1 at 2015-07-10 00:00:05 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 00:00:50 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (14.2ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (214.2ms)
+Completed 200 OK in 285ms (Views: 267.0ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 12:29:17 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (37.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (437.3ms)
+Completed 200 OK in 502ms (Views: 435.4ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:18 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 12:29:52 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (271.2ms)
+Completed 200 OK in 281ms (Views: 279.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 12:29:53 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (151.1ms)
+Completed 200 OK in 156ms (Views: 154.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 12:30:39 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (3.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (337.2ms)
+Completed 200 OK in 353ms (Views: 347.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 12:45:40 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (166.1ms)
+Completed 200 OK in 174ms (Views: 171.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 12:46:04 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (190.1ms)
+Completed 200 OK in 196ms (Views: 195.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 12:51:46 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:13:11 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (353.3ms)
+Completed 200 OK in 364ms (Views: 362.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:13:12 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:26:00 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (3.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (359.2ms)
+Completed 200 OK in 377ms (Views: 371.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:26:01 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:27:15 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (179.0ms)
+Completed 200 OK in 188ms (Views: 186.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:27:16 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:38:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (667.3ms)
+Completed 200 OK in 710ms (Views: 690.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:38:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:38:17 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:38:18 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:48:39 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (112.1ms)
+Completed 200 OK in 120ms (Views: 118.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:48:39 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:48:40 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (148.1ms)
+Completed 200 OK in 154ms (Views: 152.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:50:28 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:51:08 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (168.1ms)
+Completed 200 OK in 173ms (Views: 170.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:51:09 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (0.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (127.1ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 13:52:47 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:00:59 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (136.1ms)
+Completed 200 OK in 147ms (Views: 142.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 14:00:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:00 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (182.1ms)
+Completed 200 OK in 191ms (Views: 187.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 14:01:17 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:04:57 -0700
+Processing by PagesController#map as HTML
+  Rendered pages/map.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
+    </style>
+
+			<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+</script>
+
+    <% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.index)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom) %>
+  <% end -%>
+
+    <script type="text/javascript">
+
+    // MAP CODE
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
+
+    map.setOptions({styles: styles});
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    var i;
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+    }
+
+    var infoWindows = new Array();
+    var curOpen = null;
+    
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+
+
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+
+
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	</head>
+
+
+<script> 
+
+// REFRESH DATA BUTTON CODE
+
+//updateDataCount = 0;
+
+function promptPassword(){
+        // AJAX script here
+
+        var password = prompt("Please Enter Admin Password","");
+        var correctPassword = 'Ihategit';
+
+        if (password == correctPassword){
+            var canUpdate = true;
+
+            $.ajax({
+                url: '/ajax/update',
+                type: 'POST',
+                dataType: 'json',
+                data: {canUpdate: canUpdate},
+            }).done(function(){
+              
+            });
+
+            alert('Data is being updated...')
+            window.location.reload();
+            }
+
+        else if (password == null){
+          return;
+        }
+        else {
+            alert("Incorrect Password");
+        }
+    }
+  
+
+// FACEBOOK LOGOUT FUNCTIONALITY
+
+	function log_out(){
+		window.location="http://localhost:3000/pages/index";
+    }
+
+//  Facebook SDK Init 
+      
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1458428974467904',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    //window.location="http://localhost:3000/pages/testmap";
+
+    FB.api('/me', function(response) {
+        var userName = response.first_name;
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+//        alert("Your name is " + userName);
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
+function checkLoginStatus() {
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'not_authorized') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else if (response.status === 'unknown') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else {
+
+    }
+  });
+}
+
+
+//FB.ui({
+//    method: 'feed',
+//    link: 'https://developers.facebook.com/docs/',
+//    caption: 'An example caption',
+//}, function(response){});
+
+
+FB.ui(
+        {
+            method: 'share',
+            href: "https://park-place.herokuapp.com/pages/map",
+        },
+        // callback
+        function(response) {
+            if (response && !response.error_code) {
+                alert('Posting completed.');
+            } else {
+                alert('Error while posting.');
+            }
+        }
+);
+
+
+</script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#share_button').click(function(e){
+                e.preventDefault();
+                FB.ui(
+                        {
+                            method: 'feed',
+                            name: 'This is the content of the "name" field.',
+                            link: 'http://www.groupstudy.in/articlePost.php?id=A_111213073144',
+                            picture: "http://www.groupstudy.in/img/logo3.jpeg",
+                        caption: 'Top 3 reasons why you should care about your finance',
+                                description: 'What happens when you dont take care of your finances? Just look at our country -- you spend irresponsibly, get in debt up to your eyeballs, and stress about how youre going to make ends meet. The difference is that you dont have a glut of taxpayers…',
+                        message: ''
+            });
+        });
+        });
+    </script>
+
+
+
+
+<!-- 	<body> -->
+<body onload="checkLoginStatus()">
+
+		<!-- Header -->
+			<header id="header">
+				<h1 id = "h1"><strong><a></a></strong></h1>
+
+
+				<nav id="nav">
+					<ul>
+						<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
+          onlogin="log_out();"
+          style=position:absolute;left:138px;bottom:8px;></div>
+						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<!-- 	<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Park Place</h2>
+					</header>
+       </div>
+			</section> -->
+		
+		<div id="map-canvas"></div>
+
+
+        <br>
+        <br>
+
+
+
+
+                <body>
+
+                <img src = "share_button.png" id = "share_button">
+
+                <!--<div class="fb-share-button" data-href="https://park-place.herokuapp.com/pages/map" data-width="400" data-layout="button"></div>-->
+                </body>
+
+
+
+                <!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 404: Team Name Not Found</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>):
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:140:in `valid_encoding'
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:114:in `call'
+  actionview (4.2.1) lib/action_view/template.rb:270:in `compile'
+  actionview (4.2.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Ruby200-x64/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.7ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (121.1ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:20:10 -0700
+Processing by PagesController#map as HTML
+  Rendered pages/map.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
+    </style>
+
+			<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+</script>
+
+    <% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.index)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom) %>
+  <% end -%>
+
+    <script type="text/javascript">
+
+    // MAP CODE
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
+
+    map.setOptions({styles: styles});
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    var i;
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+    }
+
+    var infoWindows = new Array();
+    var curOpen = null;
+    
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+
+
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+
+
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	</head>
+
+
+<script> 
+
+// REFRESH DATA BUTTON CODE
+
+//updateDataCount = 0;
+
+function promptPassword(){
+        // AJAX script here
+
+        var password = prompt("Please Enter Admin Password","");
+        var correctPassword = 'Ihategit';
+
+        if (password == correctPassword){
+            var canUpdate = true;
+
+            $.ajax({
+                url: '/ajax/update',
+                type: 'POST',
+                dataType: 'json',
+                data: {canUpdate: canUpdate},
+            }).done(function(){
+              
+            });
+
+            alert('Data is being updated...')
+            window.location.reload();
+            }
+
+        else if (password == null){
+          return;
+        }
+        else {
+            alert("Incorrect Password");
+        }
+    }
+  
+
+// FACEBOOK LOGOUT FUNCTIONALITY
+
+	function log_out(){
+		window.location="http://localhost:3000/pages/index";
+    }
+
+//  Facebook SDK Init 
+      
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1458428974467904',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    //window.location="http://localhost:3000/pages/testmap";
+
+    FB.api('/me', function(response) {
+        var userName = response.first_name;
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+//        alert("Your name is " + userName);
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
+function checkLoginStatus() {
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'not_authorized') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else if (response.status === 'unknown') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else {
+
+    }
+  });
+}
+
+
+//FB.ui({
+//    method: 'feed',
+//    link: 'https://developers.facebook.com/docs/',
+//    caption: 'An example caption',
+//}, function(response){});
+
+
+FB.ui(
+        {
+            method: 'share',
+            href: "https://park-place.herokuapp.com/pages/map",
+        },
+        // callback
+        function(response) {
+            if (response && !response.error_code) {
+                alert('Posting completed.');
+            } else {
+                alert('Error while posting.');
+            }
+        }
+);
+
+
+</script>
+
+
+    <!--<script type="text/javascript">-->
+//        $(document).ready(function(){
+//            $('#share_button').click(function(e){
+//                e.preventDefault();
+//                FB.ui(
+//                        {
+//                            method: 'feed',
+//                            name: 'This is the content of the "name" field.',
+//                            link: 'http://www.groupstudy.in/articlePost.php?id=A_111213073144',
+//                            picture: "http://www.groupstudy.in/img/logo3.jpeg",
+//                        caption: 'Top 3 reasons why you should care about your finance',
+//                                description: 'What happens when you dont take care of your finances? Just look at our country -- you spend irresponsibly, get in debt up to your eyeballs, and stress about how youre going to make ends meet. The difference is that you dont have a glut of taxpayers…',
+//                        message: ''
+//            });
+//        });
+//        });
+    <!--</script>-->
+
+
+
+
+<!-- 	<body> -->
+<body onload="checkLoginStatus()">
+
+		<!-- Header -->
+			<header id="header">
+				<h1 id = "h1"><strong><a></a></strong></h1>
+
+
+				<nav id="nav">
+					<ul>
+						<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
+          onlogin="log_out();"
+          style=position:absolute;left:138px;bottom:8px;></div>
+						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<!-- 	<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Park Place</h2>
+					</header>
+       </div>
+			</section> -->
+		
+		<div id="map-canvas"></div>
+
+
+        <br>
+        <br>
+
+
+
+
+                <body>
+
+                <!--<img src = "share_button.png" id = "share_button">-->
+
+                <div class="fb-share-button" data-href="https://park-place.herokuapp.com/pages/map" data-width="400" data-layout="button"></div>
+                </body>
+
+
+
+                <!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 404: Team Name Not Found</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>):
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:140:in `valid_encoding'
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:114:in `call'
+  actionview (4.2.1) lib/action_view/template.rb:270:in `compile'
+  actionview (4.2.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Ruby200-x64/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (82.1ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:20:15 -0700
+Processing by PagesController#map as HTML
+  Rendered pages/map.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
+    </style>
+
+			<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+</script>
+
+    <% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.index)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom) %>
+  <% end -%>
+
+    <script type="text/javascript">
+
+    // MAP CODE
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
+
+    map.setOptions({styles: styles});
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    var i;
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+    }
+
+    var infoWindows = new Array();
+    var curOpen = null;
+    
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+
+
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+
+
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	</head>
+
+
+<script> 
+
+// REFRESH DATA BUTTON CODE
+
+//updateDataCount = 0;
+
+function promptPassword(){
+        // AJAX script here
+
+        var password = prompt("Please Enter Admin Password","");
+        var correctPassword = 'Ihategit';
+
+        if (password == correctPassword){
+            var canUpdate = true;
+
+            $.ajax({
+                url: '/ajax/update',
+                type: 'POST',
+                dataType: 'json',
+                data: {canUpdate: canUpdate},
+            }).done(function(){
+              
+            });
+
+            alert('Data is being updated...')
+            window.location.reload();
+            }
+
+        else if (password == null){
+          return;
+        }
+        else {
+            alert("Incorrect Password");
+        }
+    }
+  
+
+// FACEBOOK LOGOUT FUNCTIONALITY
+
+	function log_out(){
+		window.location="http://localhost:3000/pages/index";
+    }
+
+//  Facebook SDK Init 
+      
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1458428974467904',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    //window.location="http://localhost:3000/pages/testmap";
+
+    FB.api('/me', function(response) {
+        var userName = response.first_name;
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+//        alert("Your name is " + userName);
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
+function checkLoginStatus() {
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'not_authorized') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else if (response.status === 'unknown') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else {
+
+    }
+  });
+}
+
+
+//FB.ui({
+//    method: 'feed',
+//    link: 'https://developers.facebook.com/docs/',
+//    caption: 'An example caption',
+//}, function(response){});
+
+
+FB.ui(
+        {
+            method: 'share',
+            href: "https://park-place.herokuapp.com/pages/map",
+        },
+        // callback
+        function(response) {
+            if (response && !response.error_code) {
+                alert('Posting completed.');
+            } else {
+                alert('Error while posting.');
+            }
+        }
+);
+
+
+</script>
+
+
+    <!--<script type="text/javascript">-->
+//        $(document).ready(function(){
+//            $('#share_button').click(function(e){
+//                e.preventDefault();
+//                FB.ui(
+//                        {
+//                            method: 'feed',
+//                            name: 'This is the content of the "name" field.',
+//                            link: 'http://www.groupstudy.in/articlePost.php?id=A_111213073144',
+//                            picture: "http://www.groupstudy.in/img/logo3.jpeg",
+//                        caption: 'Top 3 reasons why you should care about your finance',
+//                                description: 'What happens when you dont take care of your finances? Just look at our country -- you spend irresponsibly, get in debt up to your eyeballs, and stress about how youre going to make ends meet. The difference is that you dont have a glut of taxpayers…',
+//                        message: ''
+//            });
+//        });
+//        });
+    <!--</script>-->
+
+
+
+
+<!-- 	<body> -->
+<body onload="checkLoginStatus()">
+
+		<!-- Header -->
+			<header id="header">
+				<h1 id = "h1"><strong><a></a></strong></h1>
+
+
+				<nav id="nav">
+					<ul>
+						<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
+          onlogin="log_out();"
+          style=position:absolute;left:138px;bottom:8px;></div>
+						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<!-- 	<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Park Place</h2>
+					</header>
+       </div>
+			</section> -->
+		
+		<div id="map-canvas"></div>
+
+
+        <br>
+        <br>
+
+
+
+
+                <body>
+
+                <!--<img src = "share_button.png" id = "share_button">-->
+
+                <div class="fb-share-button" data-href="https://park-place.herokuapp.com/pages/map" data-width="400" data-layout="button"></div>
+                </body>
+
+
+
+                <!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 404: Team Name Not Found</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>):
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:140:in `valid_encoding'
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:114:in `call'
+  actionview (4.2.1) lib/action_view/template.rb:270:in `compile'
+  actionview (4.2.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Ruby200-x64/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (139.1ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:20:42 -0700
+Processing by PagesController#map as HTML
+  Rendered pages/map.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
+    </style>
+
+			<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+</script>
+
+    <% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.index)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom) %>
+  <% end -%>
+
+    <script type="text/javascript">
+
+    // MAP CODE
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.261226, lng: -123.1139268},
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+      var styles = [
+        {
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -20 }
+           ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+    ];
+
+    map.setOptions({styles: styles});
+
+    var markers = new Array();
+    var names = <%= raw namesRuby%>;    
+    var lats = <%= raw latsRuby %>;
+    var lngs = <%= raw lngsRuby %>;
+    var haveWashroom = <%= raw haveWashroomRuby %>;
+    var ids = <%= raw idsRuby %>;
+    var length = names.length;
+
+    function hasWashroom(index) {
+      if (haveWashroom[index] == 1) return 'yes';
+      else return 'no';
+    }
+
+    function getName(index) {
+      return names[index];
+    }
+
+    function getContentString(index){
+      return '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+          '<div id="bodyContent">'+
+          'Washroom on site: ' + hasWashroom(index) +
+          '</div>'+
+          '</div>';
+    }
+
+    var i;
+    for (i = 0; i < length; i++) {
+      markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng(lats[i], lngs[i]),
+          map: map,
+          title: names[i],
+          id: ids[i],
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }));
+
+    }
+
+    var infoWindows = new Array();
+    var curOpen = null;
+    
+    for (i = 0; i < length; i++) {
+        infoWindows.push(new google.maps.InfoWindow({
+          content: getContentString(i)
+        }));
+    }
+
+    markers.forEach(function(marker){
+      google.maps.event.addListener(markers[marker.id], 'click', function() {
+            if (curOpen == infoWindows[marker.id]) {
+              curOpen.close();
+              curOpen = null;
+            } else {
+              if (curOpen){
+                curOpen.close();
+              } 
+                infoWindows[marker.id].open(map,markers[marker.id]);
+                curOpen = infoWindows[marker.id];
+            }
+          });
+    }); 
+
+
+    for (i = 0; i<length; i++){
+        markers[i].setmap(map);
+    }
+
+
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	</head>
+
+
+<script> 
+
+// REFRESH DATA BUTTON CODE
+
+//updateDataCount = 0;
+
+function promptPassword(){
+        // AJAX script here
+
+        var password = prompt("Please Enter Admin Password","");
+        var correctPassword = 'Ihategit';
+
+        if (password == correctPassword){
+            var canUpdate = true;
+
+            $.ajax({
+                url: '/ajax/update',
+                type: 'POST',
+                dataType: 'json',
+                data: {canUpdate: canUpdate},
+            }).done(function(){
+              
+            });
+
+            alert('Data is being updated...')
+            window.location.reload();
+            }
+
+        else if (password == null){
+          return;
+        }
+        else {
+            alert("Incorrect Password");
+        }
+    }
+  
+
+// FACEBOOK LOGOUT FUNCTIONALITY
+
+	function log_out(){
+		window.location="http://localhost:3000/pages/index";
+    }
+
+//  Facebook SDK Init 
+      
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1458428974467904',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    //window.location="http://localhost:3000/pages/testmap";
+
+    FB.api('/me', function(response) {
+        var userName = response.first_name;
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+//        alert("Your name is " + userName);
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
+function checkLoginStatus() {
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'not_authorized') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else if (response.status === 'unknown') {
+     alert("Please log in and authorize Park Place.");
+     log_out();
+  }
+  else {
+
+    }
+  });
+}
+
+
+//FB.ui({
+//    method: 'feed',
+//    link: 'https://developers.facebook.com/docs/',
+//    caption: 'An example caption',
+//}, function(response){});
+
+
+FB.ui(
+        {
+            method: 'share',
+            href: "https://park-place.herokuapp.com/pages/map",
+        },
+        // callback
+        function(response) {
+            if (response && !response.error_code) {
+                alert('Posting completed.');
+            } else {
+                alert('Error while posting.');
+            }
+        }
+);
+
+
+</script>
+
+
+    <!--<script type="text/javascript">-->
+//        $(document).ready(function(){
+//            $('#share_button').click(function(e){
+//                e.preventDefault();
+//                FB.ui(
+//                        {
+//                            method: 'feed',
+//                            name: 'This is the content of the "name" field.',
+//                            link: 'http://www.groupstudy.in/articlePost.php?id=A_111213073144',
+//                            picture: "http://www.groupstudy.in/img/logo3.jpeg",
+//                        caption: 'Top 3 reasons why you should care about your finance',
+//                                description: 'What happens when you dont take care of your finances? Just look at our country -- you spend irresponsibly, get in debt up to your eyeballs, and stress about how youre going to make ends meet. The difference is that you dont have a glut of taxpayers…',
+//                        message: ''
+//            });
+//        });
+//        });
+    <!--</script>-->
+
+
+
+
+<!-- 	<body> -->
+<body onload="checkLoginStatus()">
+
+		<!-- Header -->
+			<header id="header">
+				<h1 id = "h1"><strong><a></a></strong></h1>
+
+
+				<nav id="nav">
+					<ul>
+						<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
+          onlogin="log_out();"
+          style=position:absolute;left:138px;bottom:8px;></div>
+						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<!-- 	<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Park Place</h2>
+					</header>
+       </div>
+			</section> -->
+		
+		<div id="map-canvas"></div>
+
+
+        <br>
+        <br>
+
+
+
+
+                <body>
+
+                <!--<img src = "share_button.png" id = "share_button">-->
+
+                <div class="fb-share-button" data-href="https://park-place.herokuapp.com/pages/map" data-width="400" data-layout="button"></div>
+                </body>
+
+
+
+                <!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 404: Team Name Not Found</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>):
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:140:in `valid_encoding'
+  actionview (4.2.1) lib/action_view/template/handlers/erb.rb:114:in `call'
+  actionview (4.2.1) lib/action_view/template.rb:270:in `compile'
+  actionview (4.2.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.2.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Ruby200-x64/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (84.8ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (161.1ms)
+Completed 200 OK in 167ms (Views: 165.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 14:20:55 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:25:48 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (131.1ms)
+Completed 200 OK in 137ms (Views: 135.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 14:25:49 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 14:33:20 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (261.2ms)
+Completed 200 OK in 270ms (Views: 267.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 14:33:21 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (192.1ms)
+Completed 200 OK in 204ms (Views: 200.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 15:37:25 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (324.2ms)
+Completed 200 OK in 342ms (Views: 336.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 15:39:05 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 15:42:52 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (343.2ms)
+Completed 200 OK in 368ms (Views: 363.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 15:42:52 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 15:42:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 15:42:52 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:42:52 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:42:52 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 15:42:53 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 15:42:53 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:42:53 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:42:53 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 15:42:53 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (103.1ms)
+Completed 200 OK in 117ms (Views: 113.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 15:47:19 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:03:00 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (212.2ms)
+Completed 200 OK in 224ms (Views: 220.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:03:01 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (0.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (174.1ms)
+Completed 200 OK in 183ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:15:51 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:26:52 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (102.1ms)
+Completed 200 OK in 109ms (Views: 107.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:26:53 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (195.1ms)
+Completed 200 OK in 214ms (Views: 211.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:29:11 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:29:12 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:29:12 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (191.1ms)
+Completed 200 OK in 207ms (Views: 204.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:31:03 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (193.1ms)
+Completed 200 OK in 207ms (Views: 203.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:43:01 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:47:16 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (169.1ms)
+Completed 200 OK in 186ms (Views: 181.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:47:17 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:50:40 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (182.5ms)
+Completed 200 OK in 203ms (Views: 198.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:50:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:50:40 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:50:40 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:50:40 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:50:41 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:50:41 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:50:41 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:50:41 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:50:41 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:50:41 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:51:53 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (290.2ms)
+Completed 200 OK in 308ms (Views: 304.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700

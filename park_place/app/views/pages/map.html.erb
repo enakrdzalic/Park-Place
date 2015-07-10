@@ -296,7 +296,30 @@ function checkLoginStatus() {
   });
 }
 
+
+function FBshare(){
+    FB.ui({
+        method: 'feed',
+        name: "Park Place",
+        link: "https://park-place.herokuapp.com/pages/index",
+        picture: 'http://discoveralbia.com/wp-content/uploads/2012/09/creatures-3-family-tree-header.png',
+        caption: "Come explore with me!",
+        description: "Park Place is the perfect web app to track your favourite parks and search for more! Which park will you go to today?"
+
+    }, function(response) {
+        if(response && response.post_id){}
+        else{}
+    });
+
+}
+
+
+
 </script>
+
+
+
+
 
 <!-- 	<body> -->
 <body onload="checkLoginStatus()">
@@ -313,7 +336,7 @@ function checkLoginStatus() {
           onlogin="log_out();"
           style=position:absolute;left:138px;bottom:8px;></div>
 						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
-					</ul>
+					</ul>   
 				</nav>
 			</header>
 
@@ -333,26 +356,17 @@ function checkLoginStatus() {
         <br>
         <br>
 
-        <!-- Like and Share :) -->
-
-        <body>
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1458428974467904";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-        <div class="fb-like" data-href="https://www.facebook.com/dovbushdancers" data-send="true" data-width="450" data-show-faces="true"></div>
-        </body>
 
 
 
+                <body>
+                <div><a href="#" onclick="FBshare()"class="button special small">Share</a></div>
+                <!--<div class="fb-share-button" data-href="https://park-place.herokuapp.com/pages/map" data-width="400" data-layout="button"></div>-->
+                </body>
 
 
-        <!-- Footer -->
+
+                <!-- Footer -->
 			<footer id="footer">
 				<div class="container">
 					<ul class="copyright">
