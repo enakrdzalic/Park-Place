@@ -1,13 +1,40 @@
 class User < ActiveRecord::Base
-    def self.from_omniauth(auth)
-        where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
-            user.provider = auth.provider
-            user.uid = auth.uid
-            user.name = auth.info.name
-            user.image = auth.info.image
-            user.oauth_token = auth.credentials.token
-            user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-            user.save!
+    has_many :favourites
+    has_many :parks, through:  :favourites
+    
+    
+    def addFavourite(p)
+
+        if (has5Favourites == false)
+            Favourite.create(:user_id => self.id, :park_id => p.parkID)
+            return true
         end
+        
+        return false
     end
+    
+    
+    
+    def removeFavourite(p)
+        Favourite.where(["user_id = ? and park_id = ?", self.id, p.parkID]).first.delete
+    end
+    
+    
+    
+    def has5Favourites
+        numFavs = Favourite.where("user_id = #{userID}").length
+        if numFavs >= 5
+            return true
+        end
+        
+        return false
+    end
+    
+    
+    
+    def getFavourites
+        userID = self.id
+        return Favourite.where("user_id = #{userID}").all
+    end
+    
 end
