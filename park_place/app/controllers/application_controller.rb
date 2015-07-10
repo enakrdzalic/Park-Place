@@ -50,14 +50,14 @@ class ApplicationController < ActionController::Base
         # Solution by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|
             
-            parkHasWashroom = false;
+            parkHasWashroom = nil;
             if row[14] == "Y"
-                parkHasWashroom = true
+                parkHasWashroom = "Washroom"
             end
             
-            parkIsLarge = false;
+            parkIsLarge = "Small";
             if row[8].to_f >= 1.0
-                parkIsLarge = true;
+                parkIsLarge = "Large";
             end
             
             latlng = row[7].split(',')
