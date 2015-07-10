@@ -5,41 +5,41 @@ templated.co @templatedco
 Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-<head>
-	<title>Park Place</title>
+	<head>
+		<title>Park Place</title>
+     
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<style type="text/css">
+      html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
+    </style>
 
-	<style type="text/css">
-	html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
-	</style>
+			<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+</script>
 
-	<script type="text/javascript"
-	src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
-	</script>
+    <% namesRuby = Array.new
+    latsRuby = Array.new
+    lngsRuby = Array.new
+    haveWashroomRuby = Array.new
+    idsRuby = Array.new
+    %>
+<% Park.all.each do |p| 
+    idsRuby.push(p.index)
+    namesRuby.push(p.name)
+    latsRuby.push(p.lat)
+    lngsRuby.push(p.lng)
+    haveWashroomRuby.push(p.hasWashroom == "Washroom") %>
+  <% end -%>
 
-	<% namesRuby = Array.new
-	latsRuby = Array.new
-	lngsRuby = Array.new
-	haveWashroomRuby = Array.new
-	idsRuby = Array.new
-	%>
-	<% Park.all.each do |p|
-		idsRuby.push(p.index)
-		namesRuby.push(p.name)
-		latsRuby.push(p.lat)
-		lngsRuby.push(p.lng)
-		haveWashroomRuby.push(p.hasWashroom == "Washroom") %>
-		<% end -%>
+    <script type="text/javascript">
 
-		<script type="text/javascript">
-
-// MAP CODE
+    // MAP CODE
 
 function initMap() {
 	var mapOptions = {
@@ -311,11 +311,10 @@ function checkLoginStatus() {
 	});
 }
 
-$(document).ready(function() {
+ $(document).ready(function() {
     $('#parks_list').dataTable( {
-        "paging":   false
-
-
+        "paging":   false,
+        "bAutoWidth": false
     } );
 } );
 
@@ -324,24 +323,25 @@ $(document).ready(function() {
 <!-- 	<body> -->
 <body onload="checkLoginStatus()">
 
-	<!-- Header -->
-	<header id="header">
-		<h1><strong><a>Park Place</a></strong></h1>
+
+<!-- Header -->
+  <header id="header">
+    <h1><strong><a>Park Place</a></strong></h1>
 
 
-		<nav id="nav">
-			<ul>
-				<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
-				<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"
-				onlogin="log_out();"
-				style=position:absolute;left:138px;bottom:8px;></div>
-				<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
-			</ul>
-		</nav>
-	</header>
+    <nav id="nav">
+      <ul>
+        <!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+        <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"
+        onlogin="log_out();"
+        style=position:absolute;left:138px;bottom:8px;></div>
+        <li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<!-- Main -->
-<!-- 	<section id="main" class="wrapper">
+  <!-- Main -->
+<!--  <section id="main" class="wrapper">
 <div class="container">
 
 <header class="major special">
@@ -352,19 +352,18 @@ $(document).ready(function() {
 
 
  <table style="width:100%">
+  <tr>
+    <td>Congratulations for finding the secret message!</td>
+  </tr>
+</table>
+
+
+        <div id="map-canvas" style="width:57%; height:700px; float:left;"></div>
+
+        <table style="float:right; width:43%" id="scrollable">
           <tr>
-            <td>Congratulations for finding the secret message!</td>
-          </tr>
-        </table>
-
-
-        <div id="map-canvas" style="width:52%; height:700px; float:left;"></div>
-
-        <table style="float:right; width:48%">
-          <tr>
-            <td id="scrollable"><br/><br/>
-
-              <table id="parks_list" style="width:5%">
+            <td>
+              <table id="parks_list">
                 <thead>
                 <tr>
                   <th>Park Name</th>
@@ -402,12 +401,12 @@ $(document).ready(function() {
 
 <!-- Footer -->
 <footer id="footer">
-	<div class="container">
-		<ul class="copyright">
-			<li>&copy; 404: Team Name Not Found</li>
-			<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-		</ul>
-	</div>
+  <div class="container">
+    <ul class="copyright">
+      <li>&copy; 404: Team Name Not Found</li>
+      <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+    </ul>
+  </div>
 </footer>
 
 </body>

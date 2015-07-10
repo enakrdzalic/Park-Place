@@ -22,7 +22,6 @@ class ApplicationController < ActionController::Base
         ftp.getbinaryfile("csv_parks_facilities.zip", file_path)
     end
     
-    
     def unzipThis
         require 'zip'
         
