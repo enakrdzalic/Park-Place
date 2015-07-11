@@ -26,7 +26,7 @@ table#scrollable {
      height:700px;
      display:block;
      table-layout: fixed;
-     float:right; width:48%; font-size:15px;
+
  }
 
 tr#table_title {
