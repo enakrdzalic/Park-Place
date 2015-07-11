@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   
   post '/ajax/update' => 'application#updateData'
 
+  get "favourites/:park_id" => "application#create", :as => :favourite
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

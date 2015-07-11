@@ -83,5 +83,14 @@ class ApplicationController < ActionController::Base
             render :nothing => true
         end
     end
+
+
+    def create
+        current_user.favourites.create(:park_id => params[:park_id])
+        render :layout => false
+    end
+
+
+
 end
 

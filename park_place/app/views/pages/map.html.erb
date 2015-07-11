@@ -382,7 +382,27 @@ $(document).ready(function() {
                       <td><%= park.neighbourhood %></td>
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
-                      <td><%= %></td>
+
+                      <td><%= %>
+
+                        <script> 
+
+                        $(".favourite").click(function() {
+                          var park_id = $(this).attr('id');
+                          $.ajax({
+                            type: "POST",
+                            url: 'favourites/' + park_id,
+                            success: function() {
+                              // change image for button
+                              
+
+                            }
+                          })
+                        })
+                    
+                        </script>
+                                
+                      </td>
                     </tr>
                 <% end %>
                 </tbody>
