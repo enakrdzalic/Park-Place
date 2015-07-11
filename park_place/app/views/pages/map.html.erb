@@ -37,7 +37,38 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
     haveWashroomRuby.push(p.hasWashroom == "Washroom") %>
   <% end -%>
 
-    <script type="text/javascript">
+<script type="text/javascript">
+
+  var map;
+  var markers;
+  var names;
+  var lats;
+  var lngs;
+  var haveWashroom;
+  var ids;
+  var length;
+
+  var styles = [
+  {
+    stylers: [
+    { hue: "#00ffe6" },
+    { saturation: -20 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+    { lightness: 100 },
+    { visibility: "simplified" }
+    ]
+  },{
+    featureType: "road",
+    elementType: "labels",
+    stylers: [
+    { visibility: "off" }
+    ]
+  }
+  ];
 
     // MAP CODE
 
@@ -46,34 +77,10 @@ function initMap() {
 		center: { lat: 49.261226, lng: -123.1139268},
 		zoom: 12
 	};
-	var map = new google.maps.Map(document.getElementById('map-canvas'),
+   map = new google.maps.Map(document.getElementById('map-canvas'),
 		mapOptions);
 
-	var styles = [
-	{
-		stylers: [
-		{ hue: "#00ffe6" },
-		{ saturation: -20 }
-		]
-	},{
-		featureType: "road",
-		elementType: "geometry",
-		stylers: [
-		{ lightness: 100 },
-		{ visibility: "simplified" }
-		]
-	},{
-		featureType: "road",
-		elementType: "labels",
-		stylers: [
-		{ visibility: "off" }
-		]
-	}
-	];
-
 	map.setOptions({styles: styles});
-
-	return map;
 }
 
 function addMarkersToMap(map) {
@@ -112,63 +119,109 @@ function makeMarkers(length, markers, lats, lngs, map, names, ids) {
 	}
 }
 
+function initArrays() {
+  markers = new Array();
+  names = <%= raw namesRuby%>;
+  lats = <%= raw latsRuby %>;
+  lngs = <%= raw lngsRuby %>;
+  haveWashroom = <%= raw haveWashroomRuby %>;
+  ids = <%= raw idsRuby %>;
+  length = names.length;
+}
+
+function hasWashroom(index) {
+  if (haveWashroom[index] == 1) return 'yes';
+  else return 'no';
+}
+
+function getName(index) {
+  return names[index];
+}
+
+function getContentString(index){
+  return '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+  '<div id="bodyContent">'+
+  'Washroom on site: ' + hasWashroom(index) +
+  '</div>'+
+  '</div>';
+}
+
+function makeInfoWindows(markers, infoWindows, map, curOpen) {
+  for (i = 0; i < length; i++) {
+    infoWindows.push(new google.maps.InfoWindow({
+      content: getContentString(i)
+    }));
+  }
+}
+
 function initialize() {
-
-	var map = initMap();
-
-	var markers = new Array();
-	var names = <%= raw namesRuby%>;
-	var lats = <%= raw latsRuby %>;
-	var lngs = <%= raw lngsRuby %>;
-	var haveWashroom = <%= raw haveWashroomRuby %>;
-	var ids = <%= raw idsRuby %>;
-	var length = names.length;
-
-	function hasWashroom(index) {
-		if (haveWashroom[index] == 1) return 'yes';
-		else return 'no';
-	}
-
-	function getName(index) {
-		return names[index];
-	}
-
-	function getContentString(index){
-		return '<div id="content">'+
-		'<div id="siteNotice">'+
-		'</div>'+
-		'<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
-		'<div id="bodyContent">'+
-		'Washroom on site: ' + hasWashroom(index) +
-		'</div>'+
-		'</div>';
-	}
-	var i;
+	initMap();
+  initArrays();
 
 	makeMarkers(length, markers, lats, lngs, map, names, ids);
-
 	var infoWindows = new Array();
 	var curOpen = null;
 
-	function makeInfoWindows(markers, infoWindows, map, curOpen) {
-		for (i = 0; i < length; i++) {
-			infoWindows.push(new google.maps.InfoWindow({
-				content: getContentString(i)
-			}));
-		}
-	}
 	makeInfoWindows(markers, infoWindows, map, curOpen);
-
 	addMarkerListeners(map, markers, curOpen, infoWindows);
-
 	addMarkersToMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+function resetParkArrays() {
+  names = [];
+  lats = [];
+  lngs = [];
+  haveWashroom = [];
+  ids = [];
+  length = 0;
+}
 
-function updateMap(){
-  alert("Map has been updated!");
+function addParksInTableToArrays() {
+  names = ["Arbutus Village Park"];
+  lats = [49.249783];
+  lngs = [-123.155250];
+  haveWashroom = [1];
+  ids = [0];
+  length = 1;
+}
+
+function refreshMap() {
+  makeMarkers(length, markers, lats, lngs, map, names, ids);
+  var infoWindows = new Array();
+  var curOpen = null;
+
+  makeInfoWindows(markers, infoWindows, map, curOpen);
+  addMarkerListeners(map, markers, curOpen, infoWindows);
+  addMarkersToMap(map);
+}
+
+function setAllMap(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+  setAllMap(null);
+}
+
+// Deletes all markers in the array by removing references to them.
+function deleteMarkers() {
+  clearMarkers();
+  markers = [];
+}
+
+function updateMap() {
+  deleteMarkers();
+  resetParkArrays();
+  addParksInTableToArrays();
+  refreshMap();
 }
 
 </script>
