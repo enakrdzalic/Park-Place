@@ -165,6 +165,12 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+function updateMap(){
+  alert("Map has been updated!");
+}
+
 </script>
 
 </head>
@@ -225,7 +231,6 @@ function statusChangeCallback(response) {
 // for FB.getLoginStatus().
 if (response.status === 'connected') {
 // Logged into your app and Facebook.
-testAPI();
 } else if (response.status === 'not_authorized') {
 // The person is logged into Facebook, but not your app.
 document.getElementById('status').innerHTML = 'Please log ' +
@@ -257,18 +262,6 @@ xfbml      : true,  // parse social plugins on this page
 version    : 'v2.2' // use version 2.2
 });
 
-// Now that we've initialized the JavaScript SDK, we call
-// FB.getLoginStatus().  This function gets the state of the
-// person visiting this page and can return one of three states to
-// the callback you provide.  They can be:
-//
-// 1. Logged into your app ('connected')
-// 2. Logged into Facebook, but not your app ('not_authorized')
-// 3. Not logged into Facebook and can't tell if they are logged into
-//    your app or not.
-//
-// These three cases are handled in the callback function.
-
 FB.getLoginStatus(function(response) {
 	statusChangeCallback(response);
 });
@@ -283,19 +276,6 @@ FB.getLoginStatus(function(response) {
 	js.src = "//connect.facebook.net/en_US/sdk.js";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-
-// Here we run a very simple test of the Graph API after login is
-// successful.  See statusChangeCallback() for when this call is made.
-function testAPI() {
-	console.log('Welcome!  Fetching your information.... ');
-//window.location="http://localhost:3000/pages/testmap";
-
-FB.api('/me', function(response) {
-	console.log('Successful login for: ' + response.name);
-	document.getElementById('status').innerHTML =
-	'Thanks for logging in, ' + response.name + '!';
-});
-}
 
 function checkLoginStatus() {
 	FB.getLoginStatus(function(response) {
@@ -361,16 +341,16 @@ function checkLoginStatus() {
         <div id="map-canvas" style="width:57%; height:700px; float:left;"></div>
 
         <table style="float:right; width:43%" id="scrollable">
-          <tr>
-            <td>
+          <tr> 
+            <td> <button type="button" id="updateMap" onclick="updateMap();">Update map</button>
               <table id="parks_list">
                 <thead>
                 <tr>
                   <th>Park Name</th>
                   <th>Neighborhood</th>
                   <th>Facilities</th>
-                  <th>Park Size</th>
-                  <th>Favourites</th>
+                  <th>Size</th>
+                  <th>Favourite</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -380,7 +360,7 @@ function checkLoginStatus() {
                       <td><%= park.neighbourhood %></td>
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
-                      <td><%= %></td>
+                      <td><%= image_tag("heart.png", :alt => "") %></td>
                     </tr>
                 <% end %>
                 </tbody>
