@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'pages/index'
 
+  post '/ajax/getUserFavourites' => 'pages#getFavs'
   
   post '/ajax/update' => 'application#updateData'
 

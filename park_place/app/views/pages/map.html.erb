@@ -28,6 +28,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
     lngsRuby = Array.new
     haveWashroomRuby = Array.new
     idsRuby = Array.new
+    
     %>
 <% Park.all.each do |p| 
     idsRuby.push(p.index)
@@ -47,6 +48,8 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
   var haveWashroom;
   var ids;
   var length;
+  var parkIdHash;
+  var userIdHash;
 
   var styles = [
   {
@@ -127,12 +130,17 @@ function initArrays() {
   haveWashroom = <%= raw haveWashroomRuby %>;
   ids = <%= raw idsRuby %>;
   length = names.length;
+  parkIdHash = <% raw @favParkIds %>
+  userIdHash = <% raw @favUserIds %>
+
+
 }
 
 function get_filtered_data(){
 
      // _ returns a collection of 'TR' (html elements).
      // $ returns a collection of nodes (DOM elements)
+
      var parksTable = $("#parks_list").dataTable();
      var filteredrows = $("#parks_list").dataTable().$('tr', {"filter": "applied"});
 
@@ -263,6 +271,27 @@ function updateMap() {
 
 <script>
 
+//GET FAVOURITES
+
+function getUserFavourites() {
+
+var userId = 78;
+
+$.ajax({
+    url: '/ajax/getUserFavourites',
+    type: 'POST',
+    dataType: 'json',
+    data: {'userId': userId},
+    success: function (returnFavs)
+  }).done(function(){
+
+  });
+
+}
+
+
+
+
 // REFRESH DATA BUTTON CODE
 
 //updateDataCount = 0;
@@ -363,11 +392,15 @@ FB.getLoginStatus(function(response) {
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+var userId;
+
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     //window.location="http://localhost:3000/pages/testmap";
     FB.api('/me', function(response) {
         var userName = response.first_name;
+        userId = response.id;
+
         document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
 //        alert("Your name is " + userName);
       console.log('Successful login for: ' + response.name);
@@ -375,6 +408,8 @@ function testAPI() {
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+
 
 function checkLoginStatus() {
 	FB.getLoginStatus(function(response) {
@@ -427,6 +462,7 @@ function checkLoginStatus() {
 }
 
 
+
 </script>
 
 <!-- 	<body> -->
@@ -462,6 +498,7 @@ function checkLoginStatus() {
 </section> -->
 
 
+
  <table style="width:100%">
   <tr>
     <td>Congratulations for finding the secret message!</td>
@@ -494,11 +531,12 @@ function checkLoginStatus() {
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
                       <td>
-                        <%= 
-                          if (park.id < 5) 
-                            image_tag("heart.png", :alt => "Fav")
-                          end
-                             %></td>
+                       
+
+                      
+
+                        
+                        </td>
                       <td><%= park.lat %></td>
                       <td><%= park.lng %></td>
                     </tr>
@@ -517,7 +555,7 @@ function checkLoginStatus() {
     <ul class="copyright">
       <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
       <li>&copy; 404: Team Name Not Found</li>
-      <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+      <li> <a href="#" onclick='getUserFavourites();'>Refresh Data</a></li>
     </ul>
   </div>
 </footer>

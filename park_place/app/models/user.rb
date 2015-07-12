@@ -5,35 +5,20 @@ class User < ActiveRecord::Base
     
     def addFavourite(p)
 
-        if (has5Favourites == false)
-            Favourite.create(:user_id => self.id, :park_id => p.parkID)
-            return true
-        end
-        
-        return false
+            Favourite.create(:user_id => self.uid.to_i, :park_id => p.parkID.to_i)
+
     end
     
     
     
     def removeFavourite(p)
-        Favourite.where(["user_id = ? and park_id = ?", self.id, p.parkID]).first.delete
-    end
-    
-    
-    
-    def has5Favourites
-        numFavs = Favourite.where("user_id = #{userID}").length
-        if numFavs >= 5
-            return true
-        end
-        
-        return false
+        Favourite.where(["user_id = ? and park_id = ?", self.uid.to_i,p.park_ID.to_i]).first.delete
     end
     
     
     
     def getFavourites
-        userID = self.id
+        userID = self.uid
         return Favourite.where("user_id = #{userID}").all
     end
     

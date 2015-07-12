@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
     
     
+
     helper_method :updateData
     
     #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
@@ -82,5 +83,10 @@ class ApplicationController < ActionController::Base
             render :nothing => true
         end
     end
+
+
+
+
+
 end
 
