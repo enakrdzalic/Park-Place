@@ -129,6 +129,37 @@ function initArrays() {
   length = names.length;
 }
 
+function get_filtered_data(){
+
+     // _ returns a collection of 'TR' (html elements).
+     // $ returns a collection of nodes (DOM elements)
+     var parksTable = $("#parks_list").dataTable();
+     var filteredrows = $("#parks_list").dataTable().$('tr', {"filter": "applied"});
+
+     markers = new Array();
+     var i;
+     for (i = 0; i < filteredrows.length;  i++){
+
+        var park = parksTable.fnGetData(filteredrows[i]);
+        var name = park[0];
+        //var neighborhood = park[1];
+        var facilities = park[2];
+        //var size = park[3];
+        //var fav = park[4];
+        var lat = park[5];
+        var lng = park[6];
+
+        names[i] = park[0];
+        lats[i] = park[5];
+        lngs[i] = park[6];
+        if (park[2] == "Washroom") {
+          haveWashroom[i] = 1;
+        } else haveWashroom[i] = 0;
+        ids[i] = i;
+         
+    } length = i;
+}
+
 function hasWashroom(index) {
   if (haveWashroom[index] == 1) return 'yes';
   else return 'no';
@@ -220,7 +251,8 @@ function deleteMarkers() {
 function updateMap() {
   deleteMarkers();
   resetParkArrays();
-  addParksInTableToArrays();
+  //addParksInTableToArrays();
+  get_filtered_data();
   refreshMap();
 }
 
@@ -347,7 +379,22 @@ function checkLoginStatus() {
  $(document).ready(function() {
     $('#parks_list').dataTable( {
         "paging":   false,
-        "bAutoWidth": false
+
+        "columnDefs": [
+            {
+                "targets": [ 5 ],
+                "visible": false,
+                "searchable": false
+
+            },
+            {
+                "targets": [ 6 ],
+                "visible": false,
+                "searchable": false
+
+            }
+        ]
+
     } );
 } );
 
@@ -368,7 +415,7 @@ function checkLoginStatus() {
         <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"
         onlogin="log_out();"
         style=position:absolute;left:138px;bottom:8px;></div>
-        <li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+        <li><a href="#" onclick='updateMap();'>Update Map</a></li>
       </ul>
     </nav>
   </header>
@@ -394,8 +441,8 @@ function checkLoginStatus() {
         <div id="map-canvas" style="width:57%; height:700px; float:left;"></div>
 
         <table style="float:right; width:43%" id="scrollable">
-          <tr> 
-            <td> <button type="button" id="updateMap" onclick="updateMap();">Update map</button>
+          <tr>
+            <td> 
               <table id="parks_list">
                 <thead>
                 <tr>
@@ -404,6 +451,8 @@ function checkLoginStatus() {
                   <th>Facilities</th>
                   <th>Size</th>
                   <th>Favourite</th>
+                  <th>lat</th>
+                  <th>lng</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -413,7 +462,14 @@ function checkLoginStatus() {
                       <td><%= park.neighbourhood %></td>
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
-                      <td><%= image_tag("heart.png", :alt => "") %></td>
+                      <td>
+                        <%= 
+                          if (park.id < 5) 
+                            image_tag("heart.png", :alt => "Fav")
+                          end
+                             %></td>
+                      <td><%= park.lat %></td>
+                      <td><%= park.lng %></td>
                     </tr>
                 <% end %>
                 </tbody>
@@ -425,11 +481,6 @@ function checkLoginStatus() {
         <table>
           <tr>
 
-            <table style="width:100%">
-              <tr>
-                <td></td>
-              </tr>
-            </table>
 
 
 <!-- Footer -->
