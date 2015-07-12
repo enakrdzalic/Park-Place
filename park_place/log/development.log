@@ -16927,3 +16927,558 @@ Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1
 
 
 Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:07:36 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (46.3ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (600.8ms)
+Completed 200 OK in 695ms (Views: 621.4ms | ActiveRecord: 46.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:07:37 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:09:11 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (264.8ms)
+Completed 200 OK in 288ms (Views: 279.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:12 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:09:39 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (102.7ms)
+Completed 200 OK in 111ms (Views: 106.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:40 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (4.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (126.1ms)
+Completed 200 OK in 138ms (Views: 132.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:09:58 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (168.1ms)
+Completed 200 OK in 173ms (Views: 172.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:10:22 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (313.3ms)
+Completed 200 OK in 339ms (Views: 334.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:11:49 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (156.5ms)
+Completed 200 OK in 168ms (Views: 163.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:07 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (0.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (155.9ms)
+Completed 200 OK in 167ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:12:31 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:14:17 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (215.1ms)
+Completed 200 OK in 226ms (Views: 223.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:18 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.2ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (129.7ms)
+Completed 200 OK in 136ms (Views: 132.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:14:47 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (98.7ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:15:20 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:16:04 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (88.5ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:04 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:04 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:05 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (95.2ms)
+Completed 200 OK in 103ms (Views: 101.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:41 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:16:55 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (285.2ms)
+Completed 200 OK in 293ms (Views: 290.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:16:56 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-12 12:18:54 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (144.1ms)
+Completed 200 OK in 149ms (Views: 147.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-12 12:18:55 -0700
