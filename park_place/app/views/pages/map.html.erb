@@ -313,8 +313,6 @@ function FBshare(){
 
 }
 
-
-
 </script>
 
 
@@ -332,11 +330,15 @@ function FBshare(){
 				<nav id="nav">
 					<ul>
 						<!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+                      <div><a href="#" onclick="FBshare()" class="button special small"
+                              style=position:absolute;left:-238px;bottom:8px;>Share</a></div>
+
             <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" 
           onlogin="log_out();"
-          style=position:absolute;left:138px;bottom:8px;></div>
-						<li><a href="#" onclick='promptPassword();'>Refresh Data</a></li>
-					</ul>   
+          style=position:absolute;left:-90px;bottom:8px;
+            ></div>
+
+					</ul>
 				</nav>
 			</header>
 
@@ -353,25 +355,16 @@ function FBshare(){
 		<div id="map-canvas"></div>
 
 
-        <br>
-        <br>
-
-
-
-
-                <body>
-                <div><a href="#" onclick="FBshare()"class="button special small">Share</a></div>
-                <!--<div class="fb-share-button" data-href="https://park-place.herokuapp.com/pages/map" data-width="400" data-layout="button"></div>-->
-                </body>
-
 
 
                 <!-- Footer -->
 			<footer id="footer">
 				<div class="container">
 					<ul class="copyright">
+                      <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
 						<li>&copy; 404: Team Name Not Found</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+
+                      <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
 					</ul>
 				</div>
 			</footer>

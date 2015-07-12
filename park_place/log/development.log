@@ -14696,3 +14696,2234 @@ Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde4
 
 
 Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:51:54 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (294.2ms)
+Completed 200 OK in 312ms (Views: 310.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:57:26 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (166.1ms)
+Completed 200 OK in 178ms (Views: 175.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:58:07 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:59:12 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (340.2ms)
+Completed 200 OK in 357ms (Views: 354.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:13 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (73.1ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (203.1ms)
+Completed 200 OK in 216ms (Views: 141.1ms | ActiveRecord: 73.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 16:59:39 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:01:17 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (219.1ms)
+Completed 200 OK in 238ms (Views: 234.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:18 -0700
+
+
+Started POST "/ajax/update" for 127.0.0.1 at 2015-07-10 17:01:26 -0700
+Processing by ApplicationController#updateData as JSON
+  Parameters: {"canUpdate"=>"true"}
+  [1m[35mSQL (18.0ms)[0m  DELETE FROM `parks`
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Arbutus Village Park', 49.249783, -123.15525, 0, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Carnarvon Park', 49.256555, -123.171406, 1, 1, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Prince of Wales Park', 49.244397, -123.156429, 2, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site on Puget Drive', 49.247723, -123.168194, 3, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site on Quesnel Drive', 49.247623, -123.169948, 4, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Quilchena Park', 49.24369, -123.148865, 1, 5, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Ravine Park', 49.240902, -123.155935, 6, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Trafalgar Park', 49.25046, -123.161879, 1, 7, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site on Trafalgar Street', 49.244396, -123.165105, 8, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Andy Livingstone Park', 49.278923, -123.1055, 1, 9, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cardero Park', 49.292211, -123.128206, 10, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cathedral Square', 49.282084, -123.113877, 11, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Coal Harbour Park', 49.289981, -123.125015, 12, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Coopers\' Park', 49.273253, -123.1139, 13, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Creekside Park', 49.274415, -123.102924, 14, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('David Lam Park', 49.272569, -123.124145, 1, 15, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Devonian Harbour Park', 49.294353, -123.134654, 16, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Art Phillips Park', 49.285911, -123.120948, 17, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Emery Barnes Park', 49.276458, -123.123995, 18, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Harbour Green Park', 49.290263, -123.121924, 1, 19, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Helmcken Park', 49.274814, -123.119555, 20, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Marina Square', 49.292334, -123.131296, 21, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('May & Lorne Brown Park', 49.275188, -123.132046, 22, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Pioneer Place (Pigeon Park)', 49.281699, -123.104588, 23, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Portal Park', 49.288042, -123.119169, 24, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('CRAB Park at Portside', 49.284942, -123.102377, 1, 25, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Roundhouse Turntable Plaza', 49.273379, -123.121603, 26, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Sun Yat-Sen Gardens', 49.279691, -123.104233, 27, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Victory Square', 49.282218, -123.110133, 28, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Wendy Poole Park', 49.284296, -123.099666, 29, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Balaclava Park', 49.244951, -123.175247, 1, 30, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site on Blenheim', 49.255575, -123.178934, 31, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Chaldecott Park', 49.249092, -123.192177, 1, 32, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Deering Island Park', 49.218288, -123.184356, 33, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Memorial West Park', 49.243326, -123.188166, 1, 34, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Musqueam Park', 49.229331, -123.18998, 35, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Quadra West Park', 49.257112, -123.180696, 36, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Valdez Park', 49.252391, -123.1764, 37, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Charleson Park', 49.266995, -123.1242, 38, '2015-07-11 00:01:27', '2015-07-11 00:01:27')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Granville Park', 49.258105, -123.142395, 1, 39, '2015-07-11 00:01:27', '2015-07-11 00:01:27')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Granville Loop Park', 49.267284, -123.13754, 40, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Sutcliffe Park', 49.268871, -123.134832, 41, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Willow Park', 49.264868, -123.122031, 42, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Alice Townley Park', 49.268974, -123.073923, 43, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cambridge Park', 49.286753, -123.062784, 44, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Garden Park', 49.268159, -123.058994, 1, 45, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Grandview Park', 49.273511, -123.070469, 1, 46, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('McGill Park', 49.288668, -123.057154, 47, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('McSpadden Park', 49.265936, -123.066601, 48, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Mosaic Creek Park', 49.273323, -123.074121, 49, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Oxford Park', 49.286172, -123.062223, 50, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Pandora Park', 49.282533, -123.058045, 1, 51, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Salsbury Park', 49.277291, -123.067926, 52, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Templeton Park', 49.278279, -123.058646, 53, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site on Trinity Street', 49.289561, -123.059459, 54, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Victoria Park', 49.271694, -123.06673, 1, 55, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('W.C. Shelley Park', 49.263034, -123.072931, 56, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Woodland Park', 49.278526, -123.073387, 1, 57, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Adanac Park', 49.276381, -123.025811, 1, 58, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Bates Park', 49.292443, -123.024336, 59, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Burrard View Park', 49.291253, -123.050513, 1, 60, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Callister Park', 49.286214, -123.045363, 61, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Charles Park', 49.273407, -123.027661, 62, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Clinton Park', 49.270355, -123.0509, 1, 63, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Dusty Greenwell Park', 49.292113, -123.047643, 64, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Hastings Park', 49.282256, -123.039776, 65, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Hastings Community Park', 49.280637, -123.038884, 1, 66, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Kaslo Park', 49.264099, -123.046012, 67, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('New Brighton Park', 49.290122, -123.037888, 1, 68, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Rupert Park', 49.271629, -123.031384, 1, 69, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Sunrise Park', 49.266612, -123.035037, 1, 70, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Thunderbird Park', 49.268829, -123.028552, 71, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Brewers Park', 49.247695, -123.066461, 1, 72, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cedar Cottage Park', 49.260807, -123.076605, 73, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Clark Park', 49.257142, -123.072405, 74, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('General Brock Park', 49.244757, -123.058517, 75, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Glen Park', 49.249576, -123.082823, 76, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Grays Park', 49.241136, -123.084974, 1, 77, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('John Hendry (Trout Lake) Park', 49.255808, -123.062242, 1, 78, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Jones Park', 49.235945, -123.067051, 1, 79, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Kensington Park', 49.238478, -123.075308, 80, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Kingcrest Park', 49.247499, -123.074674, 81, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Sunnyside Park', 49.254924, -123.080752, 82, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Arbutus Park', 49.21659, -123.15513, 83, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Elm Park', 49.233847, -123.163488, 1, 84, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Fraser River Park', 49.207915, -123.150862, 1, 85, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Kerrisdale Centennial Park', 49.233094, -123.158043, 86, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Malkin Park', 49.231959, -123.176845, 87, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Maple Grove Park', 49.223703, -123.16013, 1, 88, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('McCleery Park', 49.226973, -123.164155, 89, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('McCleery Golf Course', 49.220813, -123.170066, 90, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Captain Cook Park', 49.21912, -123.033713, 91, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Champlain Heights Park', 49.215527, -123.032545, 92, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Everett Crowley Park', 49.210985, -123.036321, 93, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Fraserview Golf Course', 49.212251, -123.047869, 1, 94, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Killarney Park', 49.227998, -123.04413, 95, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Kinross Ravine Park', 49.207509, -123.036128, 96, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Sparwood Park', 49.220024, -123.028777, 97, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Almond Park', 49.261014, -123.184543, 98, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Connaught Park', 49.262026, -123.160025, 99, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Delamont Park', 49.265808, -123.152426, 100, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Hadden Park', 49.275353, -123.152513, 1, 101, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Jean Beaty Park', 49.271913, -123.179433, 102, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Kitsilano Beach Park', 49.273431, -123.153901, 1, 103, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Margaret Pigott Park', 49.272089, -123.167454, 104, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('McBride Park', 49.268073, -123.179732, 1, 105, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Point Grey Park Site at Trutch Street', 49.271658, -123.17617, 106, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Point Grey Park Site at Stephens Street', 49.272583, -123.166128, 107, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Point Grey Park Site at Trafalgar Street', 49.273329, -123.164637, 108, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Seaforth Peace Park', 49.271554, -123.145967, 109, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Tatlow Park', 49.270068, -123.169609, 1, 110, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Vanier Park', 49.277049, -123.143159, 1, 111, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Volunteer Park', 49.271635, -123.169243, 112, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Ash Park', 49.210597, -123.119435, 113, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Eburne Park', 49.206517, -123.129241, 114, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Marpole Park', 49.205507, -123.138307, 115, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Oak Park', 49.215497, -123.128319, 1, 116, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Riverview Park', 49.212238, -123.147342, 117, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Shannon Park', 49.215457, -123.142529, 118, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('William Mackie Park', 49.206787, -123.142733, 119, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Winona Park', 49.215431, -123.114024, 1, 120, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('China Creek North Park', 49.264901, -123.083355, 121, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('China Creek South Park', 49.261581, -123.079352, 122, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Guelph Park', 49.263965, -123.095837, 123, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Jonathan Rogers Park', 49.264334, -123.108174, 1, 124, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Major Matthews Park', 49.26158, -123.107238, 125, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Mount Pleasant Park', 49.25696, -123.106743, 126, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Robson Park', 49.258229, -123.091798, 1, 127, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Tea Swamp Park', 49.257091, -123.098595, 128, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cambie Park', 49.221411, -123.117988, 129, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Columbia Park', 49.231521, -123.111978, 1, 130, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Langara Golf Course', 49.221371, -123.11211, 131, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Montgomery Park', 49.231291, -123.130776, 1, 132, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Tisdall Park', 49.227725, -123.119693, 133, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Beaconsfield Park', 49.255546, -123.051302, 1, 134, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cariboo Park', 49.244232, -123.028792, 135, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Carleton Park', 49.242002, -123.030451, 136, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Collingwood Park', 49.237066, -123.036887, 1, 137, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Earles Park', 49.233476, -123.047702, 138, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Falaise Park', 49.256485, -123.031631, 1, 139, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Foster Park', 49.234046, -123.028741, 140, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Gaston Park', 49.236117, -123.031094, 141, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Melbourne Park', 49.236236, -123.029179, 142, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Norquay Park', 49.237098, -123.051061, 1, 143, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Price Park', 49.251572, -123.097564, 144, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Renfrew Community Park', 49.252129, -123.042896, 145, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Renfrew Ravine Park', 49.247166, -123.044111, 146, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Slocan Park', 49.243921, -123.047574, 1, 147, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Cartier Park', 49.237598, -123.097473, 148, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Grimmett Park', 49.253954, -123.102003, 149, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Hillcrest Park', 49.244734, -123.108417, 150, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Nat Bailey Stadium', 49.242653, -123.106679, 151, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Prince Edward Park', 49.244397, -123.156429, 1, 152, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Queen Elizabeth Park', 49.240978, -123.112028, 1, 153, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Riley Park', 49.241987, -123.104361, 154, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Angus Park', 49.253932, -123.143816, 155, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Devonshire Park', 49.24502, -123.13364, 156, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Kerrisdale Park', 49.235725, -123.152674, 157, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Shaughnessy Park', 49.255715, -123.135068, 158, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('VanDusen Botanical Garden', 49.239181, -123.131293, 1, 159, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Braemar Park', 49.247615, -123.12363, 1, 160, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Douglas Park', 49.252493, -123.122225, 161, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Heather Park', 49.254765, -123.121103, 162, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('MacLean Park', 49.278838, -123.088396, 1, 163, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Oppenheimer Park', 49.282645, -123.094313, 1, 164, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Strathcona Park', 49.275276, -123.084674, 1, 165, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Strathcona Linear Park', 49.276983, -123.087485, 166, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Thornton Park', 49.273946, -123.099212, 167, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('George Park', 49.212608, -123.094228, 168, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('MacDonald Park', 49.229748, -123.098396, 169, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Memorial South Park', 49.230901, -123.085138, 1, 170, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Moberly Park', 49.215602, -123.086219, 1, 171, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Ross Park', 49.217276, -123.082351, 1, 172, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Sunset Park', 49.222561, -123.096916, 173, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Bobolink Park', 49.215075, -123.057615, 1, 174, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Fraserview Park', 49.215398, -123.067572, 175, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Gladstone-Riverside Park', 49.205532, -123.056883, 176, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Gordon Park', 49.22338, -123.070491, 1, 177, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Humm Park', 49.218698, -123.063266, 178, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Nanaimo Park', 49.227724, -123.057508, 1, 179, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Riverfront Park', 49.205951, -123.04575, 1, 180, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Tecumseh Park', 49.229752, -123.069846, 181, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Alexandra Park', 49.28546, -123.14223, 182, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Barclay Heritage Square', 49.28718, -123.132167, 1, 183, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('English Bay Beach Park', 49.287118, -123.143317, 1, 184, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Morton Park', 49.28768, -123.141955, 185, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Nelson Park', 49.282855, -123.129558, 186, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Rosemont Park', 49.215746, -123.040816, 187, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Stanley Park', 49.302701, -123.144307, 1, 188, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Sunset Beach Park', 49.281211, -123.139681, 1, 189, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Rosemary Brown Park', 49.261821, -123.157388, 190, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Langara Park', 49.225093, -123.111506, 191, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Sahalli Park', 49.263885, -123.089121, 192, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site on Shaughnessy Street', 49.202224, -123.125036, 193, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Hastings Mill Park', 49.27279, -123.186689, 194, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Jericho Beach Park', 49.271513, -123.197415, 1, 195, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Locarno Park', 49.273015, -123.207284, 1, 196, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Spanish Banks Beach Park', 49.277063, -123.216909, 1, 197, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('West Point Grey Park', 49.266301, -123.204312, 1, 198, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Westmount Park', 49.271852, -123.214423, 199, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Choklit Park', 49.265482, -123.128905, 200, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('George Wainborn Park', 49.272541, -123.129311, 201, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Oak Meadows Park', 49.238445, -123.125795, 202, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Camosun', 49.257423, -123.201329, 203, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Arbutus Greenway Park', 49.262283, -123.154927, 204, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Aberdeen Park', 49.234765, -123.027446, 205, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Granville Island Water Park', 49.26955, -123.135064, 206, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Ebisu Park', 49.205468, -123.132836, 207, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Yaletown Park', 49.277042, -123.118921, 208, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Carolina Park', 49.266401, -123.090778, 209, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Park Site at South East False Creek', 49.270869, -123.110533, 210, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Habitat Island', 49.27221, -123.110791, 211, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Fraser River Trail', 49.200357, -123.135862, 212, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `parks` (`name`, `lat`, `lng`, `hasWashroom`, `index`, `created_at`, `updated_at`) VALUES ('Trillium Park', 49.275015, -123.093116, 1, 213, '2015-07-11 00:01:28', '2015-07-11 00:01:28')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `parks` (`name`, `lat`, `lng`, `index`, `created_at`, `updated_at`) VALUES ('Creekway Park', 49.288336, -123.036982, 214, '2015-07-11 00:01:28', '2015-07-11 00:01:28')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 2072ms (Views: 8.0ms | ActiveRecord: 384.5ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (306.2ms)
+Completed 200 OK in 319ms (Views: 315.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:01:30 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (215.1ms)
+Completed 200 OK in 230ms (Views: 226.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:11 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:02:43 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (140.1ms)
+Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:43 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:43 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:43 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:02:44 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:03:37 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (107.1ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:38 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (161.5ms)
+Completed 200 OK in 169ms (Views: 166.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:03:53 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:06:40 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (311.2ms)
+Completed 200 OK in 330ms (Views: 326.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:06:41 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:07:05 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (2.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (175.1ms)
+Completed 200 OK in 181ms (Views: 178.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:06 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (83.1ms)
+Completed 200 OK in 169ms (Views: 161.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:07:16 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:08:49 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:08:50 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:08:50 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:08:50 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:09:11 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (89.1ms)
+Completed 200 OK in 163ms (Views: 160.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:09:12 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:10:34 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (116.1ms)
+Completed 200 OK in 130ms (Views: 126.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:10:34 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:10:35 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (2.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (255.2ms)
+Completed 200 OK in 272ms (Views: 268.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:04 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (83.1ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:26 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (0.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (257.2ms)
+Completed 200 OK in 270ms (Views: 268.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:40 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (154.1ms)
+Completed 200 OK in 159ms (Views: 157.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:12:53 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 17:13:07 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (167.1ms)
+Completed 200 OK in 174ms (Views: 171.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 17:13:08 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:07:48 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (108.3ms)
+Completed 200 OK in 114ms (Views: 112.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-07-10 18:07:50 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (218.2ms)
+Completed 200 OK in 251ms (Views: 250.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pic08-ec3e024a0c0cb3f5536a06787df08d81049c0e3f592b344aec93219ce5d97338.jpg" for 127.0.0.1 at 2015-07-10 18:07:50 -0700
+
+
+Started GET "/assets/pic09-e7eefc88f52134e4b840a1c46fdf15c8ddda803202a01fc9a12d2b759fbb0a59.jpg" for 127.0.0.1 at 2015-07-10 18:07:50 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:08:05 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (96.0ms)
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:13:30 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (155.1ms)
+Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:21:11 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (229.2ms)
+Completed 200 OK in 243ms (Views: 240.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:04 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:19 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:20 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:20 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:20 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:20 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (239.2ms)
+Completed 200 OK in 255ms (Views: 252.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:22:55 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (81.1ms)
+Completed 200 OK in 87ms (Views: 84.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:10 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:23:23 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:23:24 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:24:29 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (3.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (218.1ms)
+Completed 200 OK in 233ms (Views: 229.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:30 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (167.4ms)
+Completed 200 OK in 171ms (Views: 170.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:44 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (163.1ms)
+Completed 200 OK in 170ms (Views: 168.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:24:57 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:25:14 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (155.1ms)
+Completed 200 OK in 161ms (Views: 158.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:15 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:25:27 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (156.1ms)
+Completed 200 OK in 163ms (Views: 160.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:28 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:25:42 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (153.1ms)
+Completed 200 OK in 159ms (Views: 156.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:43 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:25:54 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:25:55 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (151.1ms)
+Completed 200 OK in 157ms (Views: 156.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-10 18:26:16 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:26:17 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-10 18:26:17 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-10 18:26:17 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-10 18:26:17 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 16:22:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (23.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (6.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (481.8ms)
+Completed 200 OK in 518ms (Views: 495.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-07-11 16:23:01 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (114.1ms)
+Completed 200 OK in 134ms (Views: 133.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 16:23:06 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (230.2ms)
+Completed 200 OK in 234ms (Views: 233.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+
+Started GET "/pages/FB-Share-Button.png" for 127.0.0.1 at 2015-07-11 16:29:41 -0700
+
+ActionController::RoutingError (No route matches [GET] "/pages/FB-Share-Button.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (112.1ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (224.1ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (110.1ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (0.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (115.1ms)
+Completed 200 OK in 119ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-11 18:24:21 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 18:24:22 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 18:24:22 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-11 18:24:22 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-11 18:24:22 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 18:33:22 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (0.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (140.1ms)
+Completed 200 OK in 146ms (Views: 145.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-11 18:33:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 18:33:23 -0700
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 18:34:05 -0700
+Processing by PagesController#map as HTML
+  [1m[36mPark Load (1.0ms)[0m  [1mSELECT `parks`.* FROM `parks`[0m
+  Rendered pages/map.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/map" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+Processing by PagesController#map as HTML
+  [1m[35mPark Load (1.0ms)[0m  SELECT `parks`.* FROM `parks`
+  Rendered pages/map.html.erb within layouts/application (237.0ms)
+Completed 200 OK in 250ms (Views: 247.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/parser.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/parser.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/skel.self-6fb3ad6974605ae9dc4b741cb8b211338b1f2c66d04832ca7005dfc1aa20b3ff.css?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/application.self-ce03cb58216ddd4753790ecc48656082f912f21cb1baa4fc1ef2be268d6c7514.css?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
+
+
+Started GET "/assets/application.self-cbda57a03327ed3af41108fe1733f10cf5f00b04ed06b204e5673c34b5ee631e.js?body=1" for 127.0.0.1 at 2015-07-11 18:35:23 -0700
