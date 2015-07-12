@@ -11,13 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617223520) do
+ActiveRecord::Schema.define(version: 20150708234456) do
+
+  create_table "favourites", force: :cascade do |t|
+    t.integer  "user_id",    limit: 4
+    t.integer  "park_id",    limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  add_index "favourites", ["park_id"], name: "index_favourites_on_park_id", using: :btree
+  add_index "favourites", ["user_id"], name: "index_favourites_on_user_id", using: :btree
 
   create_table "parks", force: :cascade do |t|
-    t.string   "name",        limit: 255
-    t.float    "lat",         limit: 24
-    t.float    "lng",         limit: 24
-    t.boolean  "hasWashroom", limit: 1,   default: false
+    t.integer  "parkID",        limit: 4
+    t.integer  "index",         limit: 4
+    t.string   "name",          limit: 255
+    t.float    "lat",           limit: 24
+    t.float    "lng",           limit: 24
+    t.string   "neighbourhood", limit: 255
+    t.string   "hasWashroom",   limit: 255, default: "0"
+    t.string   "isLarge",       limit: 255, default: "0"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "index",       limit: 4
