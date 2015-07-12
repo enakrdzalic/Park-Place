@@ -315,6 +315,7 @@ function statusChangeCallback(response) {
 // Full docs on the response object can be found in the documentation
 // for FB.getLoginStatus().
 if (response.status === 'connected') {
+  testAPI();
 // Logged into your app and Facebook.
 } else if (response.status === 'not_authorized') {
 // The person is logged into Facebook, but not your app.
@@ -362,6 +363,19 @@ FB.getLoginStatus(function(response) {
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    //window.location="http://localhost:3000/pages/testmap";
+    FB.api('/me', function(response) {
+        var userName = response.first_name;
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+//        alert("Your name is " + userName);
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
 function checkLoginStatus() {
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'not_authorized') {
@@ -398,6 +412,21 @@ function checkLoginStatus() {
     } );
 } );
 
+ function FBshare(){
+    FB.ui({
+        method: 'feed',
+        name: "Park Place",
+        link: "https://park-place.herokuapp.com/pages/index",
+        picture: 'http://discoveralbia.com/wp-content/uploads/2012/09/creatures-3-family-tree-header.png',
+        caption: "Come explore with me!",
+        description: "Park Place is the perfect web app to track your favourite parks and search for more! Which park will you go to today?"
+    }, function(response) {
+        if(response && response.post_id){}
+        else{}
+    });
+}
+
+
 </script>
 
 <!-- 	<body> -->
@@ -405,20 +434,22 @@ function checkLoginStatus() {
 
 
 <!-- Header -->
+
+
   <header id="header">
-    <h1><strong><a>Park Place</a></strong></h1>
+        <h1 id = "h1"><strong><a></a></strong></h1>
 
 
-    <nav id="nav">
-      <ul>
-        <!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
-        <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"
-        onlogin="log_out();"
-        style=position:absolute;left:138px;bottom:8px;></div>
-        <li><a href="#" onclick='updateMap();'>Update Map</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav id="nav">
+          <ul>
+            <!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
+              <div><a href="#" onclick="FBshare();" class="button special small"
+                style="position:absolute;left:-455px;bottom:20px;">Share On Facebook</a></div>
+              <div><a href="#" onclick="updateMap();" class="button special small"
+                style="position:absolute;left:-175px;bottom:20px;">Update Map</a></div>
+          </ul>
+        </nav>
+      </header>
 
   <!-- Main -->
 <!--  <section id="main" class="wrapper">
@@ -478,17 +509,15 @@ function checkLoginStatus() {
           </tr>
         </table>
 
-        <table>
-          <tr>
-
-
+<table></table>
 
 <!-- Footer -->
 <footer id="footer">
   <div class="container">
     <ul class="copyright">
-      <li>&copy; 404: Team Name Not Found</li>
       <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+      <li>&copy; 404: Team Name Not Found</li>
+      <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
     </ul>
   </div>
 </footer>
