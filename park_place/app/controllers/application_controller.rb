@@ -83,5 +83,15 @@ class ApplicationController < ActionController::Base
             render :nothing => true
         end
     end
+    
+    
+    def loginUser
+        userID = params[:special_id]
+        userName = params[:special_name]
+        
+        User.loginUser(userId,UserName)
+        
+    end
+    
 end
 
