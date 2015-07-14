@@ -28,14 +28,25 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
     lngsRuby = Array.new
     haveWashroomRuby = Array.new
     idsRuby = Array.new
+    parkidsRuby = Array.new
+    favParkIdsRuby = Array.new
+    favUserIdsRuby = Array.new
     %>
 <% Park.all.each do |p| 
     idsRuby.push(p.index)
     namesRuby.push(p.name)
     latsRuby.push(p.lat)
     lngsRuby.push(p.lng)
+    parkidsRuby.push(p.parkID)
     haveWashroomRuby.push(p.hasWashroom == "Washroom") %>
   <% end -%>
+
+<% Favourite.all.each do |f|
+  favParkIdsRuby.push(f.park_id)
+  favUserIdsRuby.push(f.uid) %>
+  <% end -%>
+
+
 
 <script type="text/javascript">
 
@@ -47,6 +58,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
   var haveWashroom;
   var ids;
   var length;
+  
 
   var styles = [
   {
@@ -260,8 +272,20 @@ function updateMap() {
 
 </head>
 
+<script type="text/javascript">
 
-<script>
+  var parkIDs;
+  var favParkIds;
+  var favUserIds;
+  var favArray;
+  
+function initFavArrays(){
+
+  parkIDs = <%= raw parkidsRuby %>;
+  favParkIds = <%= raw favParkIdsRuby %>;
+  favUserIds = <%= raw favUserIdsRuby %>;
+}
+
 
 // REFRESH DATA BUTTON CODE
 
@@ -369,7 +393,9 @@ function testAPI() {
     FB.api('/me', function(response) {
         var userName = response.first_name;
         var id = response.id;
-        addFavourites(id);
+        initFavArrays();
+        favArray = getFavourites(id);
+        alert(favArray[0]);
         document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
         
 //        var im = document.getElementById("profileImage").setAttribute("src", "https://graph.facebook.com/" + id + "/picture?type=normal");
@@ -382,11 +408,7 @@ function testAPI() {
     });
   }
 
-  function addFavourites(id) {
-    var fav = document.getElementById("237");
-        fav.innerHTML = "<button onclick = 'random()'> Fav </button>";
-  }
-
+ 
 function checkLoginStatus() {
 
 	FB.getLoginStatus(function(response) {
@@ -438,14 +460,53 @@ function checkLoginStatus() {
     });
 }
 
-function changePic() {
-    if (document.getElementById("heart").src == "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg") {
-        document.getElementById("heart").src = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg";
-    }
-    else
-        document.getElementById("heart").src = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
+
+function changePic(parkID) {
+    if (document.getElementById("heart"+ parkID).src == "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg") {
+        document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg";
+        document.getElementById("top_park"+ park_id).innerHTML = "Favourite";
+
+    //     $.ajax({
+    //       url: '/ajax/update',
+    //       type: 'POST',
+    //       dataType: 'json',
+    //       data: {parkID: parkID, userID: userID},
+    //     }).done(function(){
+
+    //     });
+     }
+    else {
+        document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
+        document.getElementById("top_park"+ parkID).innerHTML = "";
+      }
 }
 
+function getFavourites(id) {
+
+  var returnArray = [];
+  
+  for (var j=0; j<parkIDs.length; j++) {
+    for (var i=0; i<favParkIds.length; i++) {
+      if (favParkIds[i] == parkIDs[j] && favUserIds[i] == id.toString()) {
+        returnArray.push(parkIDs[j])
+      }
+    }
+  }
+  
+  return returnArray;
+}
+
+
+//var favourites = [1,2,3];
+
+function displayImage(park_id) {
+  for (var i=0 ; i<favArray.length ; i++) {
+    if (park_id == favArray[i]) {
+      return "<img id = 'heart"+ park_id +"' height='30' width='30' align='center' src='https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park"+ park_id+"' style='visibility:hidden;'>Favourite</a></img>";
+    }
+  }
+  return "<img id = 'heart"+ park_id + "' height='30' width='30' align='center' src='https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park' style='visibility:hidden;'><a id='top_park"+ park_id+"' style='visibility:hidden;'></a></img>";
+}
 
 </script>
 
@@ -522,7 +583,11 @@ function changePic() {
                       <td><%= park.neighbourhood %></td>
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
-                      <td> <p id= <%= park.parkID %> > </p> </td>
+                      <td> <% parkID = park.parkID%>
+                        <a><script>
+                        var park_id = <%= raw parkID %>;
+                        document.write(displayImage(park_id));</script></a>
+                      </td>
                       <td><%= park.lat %></td>
                       <td><%= park.lng %></td>
                     </tr>
@@ -537,9 +602,9 @@ function changePic() {
 
 <!-- Footer -->
 
-<button type="button"><img id = "heart"
+<!-- <button type="button"><img id = "heart"
 src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg"
-alt="Submit" onclick = 'changePic()'></button>
+alt="Submit" onclick = 'changePic()'></button> -->
 
 
 

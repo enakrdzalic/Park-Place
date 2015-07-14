@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 20150708234456) do
   create_table "favourites", force: :cascade do |t|
     t.integer  "user_id",    limit: 4
     t.integer  "park_id",    limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.string   "uid",        limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   add_index "favourites", ["park_id"], name: "index_favourites_on_park_id", using: :btree
