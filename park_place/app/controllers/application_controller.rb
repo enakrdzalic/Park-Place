@@ -64,7 +64,8 @@ class ApplicationController < ActionController::Base
             
             Park.create!(:name => row[1], :lat =>  latlng[0].to_f,
                          :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom,
-                         :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9])
+                         :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9],
+                         :parkID => row[0])
                          
                          temp_index+=1
         end

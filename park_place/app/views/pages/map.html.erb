@@ -368,9 +368,10 @@ function testAPI() {
     //window.location="http://localhost:3000/pages/testmap";
     FB.api('/me', function(response) {
         var userName = response.first_name;
-        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
         var id = response.id;
-
+        addFavourites(id);
+        document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
+        
 //        var im = document.getElementById("profileImage").setAttribute("src", "https://graph.facebook.com/" + id + "/picture?type=normal");
 
       //document.getElementById("pic").innerHTML = "<img src="https://graph.facebook.com/" + id + "/picture?type=normal'>";
@@ -379,6 +380,11 @@ function testAPI() {
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
     });
+  }
+
+  function addFavourites(id) {
+    var fav = document.getElementById("237");
+        fav.innerHTML = "<button onclick = 'random()'> Fav </button>";
   }
 
 function checkLoginStatus() {
@@ -516,12 +522,7 @@ function changePic() {
                       <td><%= park.neighbourhood %></td>
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
-                      <td>
-                        <%= 
-                          if (park.id < 5) 
-                            image_tag("heart.png", :alt => "Fav")
-                          end
-                             %></td>
+                      <td> <p id= <%= park.parkID %> > </p> </td>
                       <td><%= park.lat %></td>
                       <td><%= park.lng %></td>
                     </tr>
