@@ -1,15 +1,7 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionController::TestCase
-  
-  test "should get index" do
-    get :index
-    assert_response :success
+  test "the truth" do
+    assert true
   end
-
-  test "should get map" do
-    get :map
-    assert_response :success
-  end
-  
 end

@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     # Prevent CSRF attacks by raising an exception.
     # For APIs, you may want to use :null_session instead.
     protect_from_forgery with: :exception
-    
+    include ParserHelper
     
     helper_method :updateData
     
@@ -46,6 +46,7 @@ class ApplicationController < ActionController::Base
         file_path = File.join(this_dir, 'lib', 'parks.csv')
         
         temp_index = 0
+        flash[:notice] = "Post successfully created"
         
         # Solution by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|

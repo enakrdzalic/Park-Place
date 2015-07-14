@@ -4,16 +4,47 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-stanley:
-  parkID: 0
+
+# No Washroom, Large
+one:
+  parkID: 1
   index: 0
-  name: Stanley Park
-  lat: 49
-  lng: -125
-  neighbourhood: Downtown
+  name: Arbutus Village Park
+  lat: 49.249783
+  lng: -123.155250
+  neighbourhood: Arbutus Ridge
+  hasWashroom: !!null
+  isLarge: Large
+
+# Has Washroom, Small
+two:
+  parkID: 2
+  index: 1
+  name: Carnarvon Park
+  lat: 49.256555
+  lng: -123.171406
+  neighbourhood: Arbutus Ridge
+  hasWashroom: Washroom
+  isLarge: Small
+
+# No Washroom, Small
+three:
+  parkID: 3
+  index: 2
+  name: Prince of Wales Park
+  lat: 49.244397
+  lng: -123.156429
+  neighbourhood: Arbutus Ridge
+  hasWashroom: !!null
+  isLarge: Small
+
+ # Has Washroom, Large
+four:
+  parkID: 4
+  index: 3
+  name: Park Site on Puget Drive
+  lat: 49.247723
+  lng: -123.168194
+  neighbourhood: Arbutus Ridge
   hasWashroom: Washroom
   isLarge: Large
-# column: value
-#
-#two: {}
-#  column: value

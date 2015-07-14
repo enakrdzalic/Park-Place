@@ -384,7 +384,6 @@ function testAPI() {
   }
 
 function checkLoginStatus() {
-
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'not_authorized') {
 			alert("Please log in and authorize Park Place.");
@@ -434,12 +433,16 @@ function checkLoginStatus() {
     });
 }
 
-function changePic() {
-    if (document.getElementById("heart").src == "http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png") {
-        document.getElementById("heart").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/100px-Heart_coraz%C3%B3n.svg.png";
+function changePic(parkID) {
+    if (document.getElementById("heart"+ parkID).src == "http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png") {
+        document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/100px-Heart_coraz%C3%B3n.svg.png";
+        document.getElementById("top_park"+ park_id).innerHTML = "Favourite";
     }
-    else
-        document.getElementById("heart").src = "http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png";
+    else {
+        document.getElementById("heart"+ parkID).src = "http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png";
+        document.getElementById("top_park"+ parkID).innerHTML = "";
+      }
+
 }
 
 
@@ -486,6 +489,20 @@ function changePic() {
 </div>
 </section> -->
 
+<script>
+
+var favourites = [0,1,2,5,20,12,9];
+
+function displayImage(park_id) {
+  for (var i=0 ; i<favourites.length ; i++) {
+    if (park_id == favourites[i]) {
+      return "<img id = 'heart"+ park_id +"' height='30' width='30' align='center' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/100px-Heart_coraz%C3%B3n.svg.png' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park"+ park_id+"' style='visibility:hidden;'>Favourite</a></img>";
+    }
+  }
+  return "<img id = 'heart"+ park_id + "' height='30' width='30' align='center' src='http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park' style='visibility:hidden;'><a id='top_park"+ park_id+"' style='visibility:hidden;'></a></img>";
+}
+
+</script>
 
 <br/><br/><br/>
 
@@ -514,10 +531,10 @@ function changePic() {
                       <td><%= park.neighbourhood %></td>
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
-                      <td>
-                        <img id = "heart" height="30" width="30" align="center"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/100px-Heart_coraz%C3%B3n.svg.png"
-alt="Submit" onclick = 'changePic()'></td>
+                      <td><% parkIndex = park.index%>
+                        <a><script>
+                        var park_index = <%= raw parkIndex %>;
+                        document.write(displayImage(park_index));</script></a></td>
                       <td><%= park.lat %></td>
                       <td><%= park.lng %></td>
                     </tr>
@@ -531,9 +548,6 @@ alt="Submit" onclick = 'changePic()'></td>
 <table></table>
 
 <!-- Footer -->
-
-
-
 
 <footer id="footer">
   <div class="container">
