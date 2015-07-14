@@ -4,8 +4,16 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
+stanley:
+  parkID: 0
+  index: 0
+  name: Stanley Park
+  lat: 49
+  lng: -125
+  neighbourhood: Downtown
+  hasWashroom: Washroom
+  isLarge: Large
 # column: value
 #
-two: {}
+#two: {}
 #  column: value

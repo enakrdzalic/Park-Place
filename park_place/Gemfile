@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Facebook login gem
 gem 'omniauth-facebook'
-
+gem 'rspec', '~> 3.0'
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
