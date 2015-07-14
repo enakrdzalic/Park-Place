@@ -15,11 +15,9 @@
  *= require dataTables/jquery.dataTables
  */
 
-button#updateMap {
-	float:right;
-    display:block;
-    margin-right:0px;
-    clear:left;
+
+img#heart {
+	right: 50%;
 }
 
 /* skel-baseline v2.0.3 | (c) n33 | getskel.com | MIT licensed */

@@ -371,7 +371,12 @@ function testAPI() {
     FB.api('/me', function(response) {
         var userName = response.first_name;
         document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
-//        alert("Your name is " + userName);
+        var id = response.id;
+
+//        var im = document.getElementById("profileImage").setAttribute("src", "https://graph.facebook.com/" + id + "/picture?type=normal");
+
+      //document.getElementById("pic").innerHTML = "<img src="https://graph.facebook.com/" + id + "/picture?type=normal'>";
+        document.getElementById("pic").src = "https://graph.facebook.com/" + id + "/picture?type=normal";
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
@@ -379,6 +384,7 @@ function testAPI() {
   }
 
 function checkLoginStatus() {
+
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'not_authorized') {
 			alert("Please log in and authorize Park Place.");
@@ -428,18 +434,35 @@ function checkLoginStatus() {
     });
 }
 
+function changePic() {
+    if (document.getElementById("heart").src == "http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png") {
+        document.getElementById("heart").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/100px-Heart_coraz%C3%B3n.svg.png";
+    }
+    else
+        document.getElementById("heart").src = "http://www.clker.com/cliparts/R/h/P/e/p/U/pink-heart-th.png";
+}
+
 
 </script>
+
+
+
+
 
 <!-- 	<body> -->
 <body onload="checkLoginStatus()">
 
-
-<!-- Header -->
+<!-- Header #F01D4A  #1DF051  -->
 
 
   <header id="header">
-        <h1 id = "h1"><strong><a></a></strong></h1>
+    <div>
+
+      <img id = "pic" src = ""
+      alt = "" width = "54" height = "54" style = "position:absolute; right: 500px; bottom: 20px; ">
+    </div>
+
+        <h1 id = "h1" style = "position:absolute;"><strong><a></a></strong></h1>
 
 
         <nav id="nav">
@@ -492,11 +515,9 @@ function checkLoginStatus() {
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
                       <td>
-                        <%= 
-                          if (park.id < 5) 
-                            image_tag("heart.png", :alt => "Fav")
-                          end
-                             %></td>
+                        <img id = "heart" height="30" width="30" align="center"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/100px-Heart_coraz%C3%B3n.svg.png"
+alt="Submit" onclick = 'changePic()'></td>
                       <td><%= park.lat %></td>
                       <td><%= park.lng %></td>
                     </tr>
@@ -510,6 +531,8 @@ function checkLoginStatus() {
 <table></table>
 
 <!-- Footer -->
+
+
 
 
 <footer id="footer">
@@ -527,4 +550,5 @@ function checkLoginStatus() {
 </footer>
 
 </body>
+
 </html>

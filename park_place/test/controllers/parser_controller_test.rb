@@ -38,5 +38,4 @@ class ParserControllerTest < ActionController::TestCase
   	assert park.valid?
 
   end
-
 end
