@@ -2,7 +2,6 @@ class ApplicationController < ActionController::Base
     # Prevent CSRF attacks by raising an exception.
     # For APIs, you may want to use :null_session instead.
     protect_from_forgery with: :exception
-    include ParserHelper
     
     helper_method :updateData
     
@@ -40,10 +39,10 @@ class ApplicationController < ActionController::Base
     end
     
     
-    def parse
+    def parse(park_file_name,lib_name)
         require 'csv'
         this_dir = File.dirname(__FILE__)
-        file_path = File.join(this_dir, 'lib', 'parks.csv')
+        file_path = File.join(this_dir, lib_name, park_file_name)
         
         temp_index = 0
         flash[:notice] = "Post successfully created"
@@ -65,7 +64,8 @@ class ApplicationController < ActionController::Base
             
             Park.create!(:name => row[1], :lat =>  latlng[0].to_f,
                          :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom,
-                         :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9])
+                         :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9],
+                         :parkID => row[0])
                          
                          temp_index+=1
         end
@@ -73,13 +73,12 @@ class ApplicationController < ActionController::Base
     end
     
     def updateData
-        
         canUpdate = params[:canUpdate]
         if canUpdate
             Park.delete_all
             getParksCSV
             unzipThis
-            parse
+            parse('parks.csv', 'lib')
             render :nothing => true
         end
     end
