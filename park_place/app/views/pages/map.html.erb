@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-Spatial by TEMPLATED
-templated.co @templatedco
-Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head>
 		<title>Park Place</title>
@@ -11,7 +6,6 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -140,9 +134,6 @@ function initArrays() {
 }
 
 function get_filtered_data(){
-
-     // _ returns a collection of 'TR' (html elements).
-     // $ returns a collection of nodes (DOM elements)
      var parksTable = $("#parks_list").dataTable();
      var filteredrows = $("#parks_list").dataTable().$('tr', {"filter": "applied"});
 
@@ -152,10 +143,7 @@ function get_filtered_data(){
 
         var park = parksTable.fnGetData(filteredrows[i]);
         var name = park[0];
-        //var neighborhood = park[1];
         var facilities = park[2];
-        //var size = park[3];
-        //var fav = park[4];
         var lat = park[5];
         var lng = park[6];
 
@@ -166,7 +154,6 @@ function get_filtered_data(){
           haveWashroom[i] = 1;
         } else haveWashroom[i] = 0;
         ids[i] = i;
-         
     } length = i;
 }
 
@@ -247,12 +234,10 @@ function setAllMap(map) {
   }
 }
 
-// Removes the markers from the map, but keeps them in the array.
 function clearMarkers() {
   setAllMap(null);
 }
 
-// Deletes all markers in the array by removing references to them.
 function deleteMarkers() {
   clearMarkers();
   markers = [];
@@ -261,7 +246,6 @@ function deleteMarkers() {
 function updateMap() {
   deleteMarkers();
   resetParkArrays();
-  //addParksInTableToArrays();
   get_filtered_data();
   refreshMap();
 }
@@ -279,21 +263,6 @@ function updateMap() {
   var userID;
   
 function initFavArrays(){
-
-  parkIDs = <%= raw parkidsRuby %>;
-  favParkIds = <%= raw favParkIdsRuby %>;
-  favUserIds = <%= raw favUserIdsRuby %>;
-}
-
-
-// REFRESH DATA BUTTON CODE
-
-var parkIDs;
-var favParkIds;
-var favUserIds;
-var favArray = [];
-  
-function initFavArrays(){
   parkIDs = <%= raw parkidsRuby %>;
   favParkIds = <%= raw favParkIdsRuby %>;
   favUserIds = <%= raw favUserIdsRuby %>;
@@ -301,8 +270,6 @@ function initFavArrays(){
 
 
 function promptPassword(){
-  // AJAX script here
-
   var password = prompt("Please Enter Admin Password","");
   var correctPassword = 'Ihategit';
 
@@ -361,9 +328,8 @@ function checkLoginState() {
 window.fbAsyncInit = function() {
 	FB.init({
 		appId      : '1458428974467904',
-cookie     : true,  // enable cookies to allow the server to access
-// the session
-xfbml      : true,  // parse social plugins on this page
+cookie     : true,  
+xfbml      : true,
 version    : 'v2.2'
 });
 
@@ -513,15 +479,7 @@ function ajaxChangeFavourites(parkID) {
 
 </script>
 
-
-
-
-
-<!-- 	<body> -->
 <body onload="checkLoginStatus()">
-
-<!-- Header #F01D4A  #1DF051  -->
-
 
   <header id="header">
     <div>
@@ -543,17 +501,6 @@ function ajaxChangeFavourites(parkID) {
           </ul>
         </nav>
       </header>
-
-  <!-- Main -->
-<!--  <section id="main" class="wrapper">
-<div class="container">
-
-<header class="major special">
-<h2>Park Place</h2>
-</header>
-</div>
-</section> -->
-
 
 <br/><br/><br/>
 
@@ -596,13 +543,7 @@ function ajaxChangeFavourites(parkID) {
           </tr>
         </table>
 
-
-
 <table></table>
-
-
-
-<!-- Footer -->
 
 <footer id="footer">
   <div class="container">
