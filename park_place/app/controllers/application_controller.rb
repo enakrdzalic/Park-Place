@@ -82,5 +82,18 @@ class ApplicationController < ActionController::Base
             render :nothing => true
         end
     end
+
+    def changeFavourite
+        parkID = params[:parkID]
+        userID = params[:userID]
+        if (Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first == nil)
+            Favourite.create(:uid => userID.to_s, :park_id => parkID.to_i)
+        
+         else 
+            Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first.delete
+        end
+
+    end
+
 end
 

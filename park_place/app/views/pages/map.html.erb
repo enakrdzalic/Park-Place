@@ -56,6 +56,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
   var haveWashroom;
   var ids;
   var length;
+  
 
   var styles = [
   {
@@ -269,8 +270,21 @@ function updateMap() {
 
 </head>
 
+<script type="text/javascript">
 
-<script>
+  var parkIDs;
+  var favParkIds;
+  var favUserIds;
+  var favArray = [];
+  var userID;
+  
+function initFavArrays(){
+
+  parkIDs = <%= raw parkidsRuby %>;
+  favParkIds = <%= raw favParkIdsRuby %>;
+  favUserIds = <%= raw favUserIdsRuby %>;
+}
+
 
 // REFRESH DATA BUTTON CODE
 
@@ -392,6 +406,7 @@ function displayNameAndImage() {
     });
   }
 
+ 
 function checkLoginStatus() {
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'not_authorized') {
@@ -450,7 +465,8 @@ function changePic(parkID) {
     else {
         document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
         document.getElementById("top_park"+ parkID).innerHTML = "Favourite";
-      }
+    }    
+    ajaxChangeFavourites(parkID);     
 }
 
 function getFavourites(id) {
@@ -469,6 +485,17 @@ function getFavourites(id) {
 
 function showImage(park_id) {
   return "<img id = 'heart"+ park_id + "' height='30' width='30' align='center' src='https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park"+ park_id+"' style='visibility:hidden;'></a></img>"
+}
+
+function ajaxChangeFavourites(parkID) {
+  $.ajax({
+          url: '/ajax/changeFav',
+          type: 'POST',
+          dataType: 'json',
+          data: {parkID: parkID, userID: userID},
+        }).done(function(){
+
+        });
 }
 
 
@@ -560,7 +587,6 @@ function showImage(park_id) {
 
 
 <table></table>
-
 
 
 
