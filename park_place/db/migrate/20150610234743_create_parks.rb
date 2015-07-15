@@ -7,8 +7,8 @@ class CreateParks < ActiveRecord::Migration
         t.float "lat"
         t.float "lng"
         t.string "neighbourhood"
-        t.string "hasWashroom",
-        t.string "isLarge",
+        t.string "hasWashroom"
+        t.string "isLarge"
         t.timestamps
     end
   end

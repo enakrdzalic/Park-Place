@@ -14753,3 +14753,67 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/sort_asc.
   Rendered /Users/Ena/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/Ena/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/Ena/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.4ms)
+  [1m[36m (57.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (35.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateParks (20150610234743)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateParks (20150610234743)
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/Ena/Documents/404-Team-Name-Not-Found/park_place/db/migrate/20150610234743_create_parks.rb:12)
+  [1m[35m (26.5ms)[0m  CREATE TABLE `parks` (`id` int(11) auto_increment PRIMARY KEY, `parkID` int(11), `index` int(11), `name` varchar(255), `lat` float, `lng` float, `neighbourhood` varchar(255), `hasWashroom` varchar(255), `isLarge` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150610234743')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150611232015)
+  [1m[35m (11.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `uid` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150611232015')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to Favourites (20150708234456)
+  [1m[35m (10.7ms)[0m  CREATE TABLE `favourites` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `park_id` int(11), `uid` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_favourites_on_user_id`  (`user_id`) ,  INDEX `index_favourites_on_park_id`  (`park_id`) ) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150708234456')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (5.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'park_place_development'
+  AND fk.table_name = 'favourites'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `favourites`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'park_place_development'
+  AND fk.table_name = 'parks'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `parks`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'park_place_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (1.1ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `favourites` (`uid`, `park_id`, `created_at`, `updated_at`) VALUES ('10153362248570930', 11, '2015-07-14 23:35:21', '2015-07-14 23:35:21')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `favourites` (`uid`, `park_id`, `created_at`, `updated_at`) VALUES ('10153362248570930', 61, '2015-07-14 23:35:29', '2015-07-14 23:35:29')[0m
+  [1m[35m (7.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `favourites` (`uid`, `park_id`, `created_at`, `updated_at`) VALUES ('10153362248570930', 124, '2015-07-14 23:35:34', '2015-07-14 23:35:34')
+  [1m[36m (8.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `favourites` (`uid`, `park_id`, `created_at`, `updated_at`) VALUES ('10153362248570930', 168, '2015-07-14 23:35:38', '2015-07-14 23:35:38')[0m
+  [1m[35m (8.4ms)[0m  COMMIT
