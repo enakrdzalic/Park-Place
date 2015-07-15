@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
     # For APIs, you may want to use :null_session instead.
     protect_from_forgery with: :exception
     
-    
     helper_method :updateData
     
     #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
@@ -40,12 +39,15 @@ class ApplicationController < ActionController::Base
     end
     
     
-    def parse
+    def parse(park_file_name,lib_name)
+        print "Hello"
+
         require 'csv'
         this_dir = File.dirname(__FILE__)
-        file_path = File.join(this_dir, 'lib', 'parks.csv')
+        file_path = File.join(this_dir, lib_name, park_file_name)
         
         temp_index = 0
+        flash[:notice] = "Post successfully created"
         
         # Solution by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|
@@ -64,7 +66,8 @@ class ApplicationController < ActionController::Base
             
             Park.create!(:name => row[1], :lat =>  latlng[0].to_f,
                          :lng => latlng[1].to_f, :hasWashroom => parkHasWashroom,
-                         :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9])
+                         :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9],
+                         :parkID => row[0])
                          
                          temp_index+=1
         end
@@ -72,15 +75,27 @@ class ApplicationController < ActionController::Base
     end
     
     def updateData
-        
         canUpdate = params[:canUpdate]
         if canUpdate
             Park.delete_all
             getParksCSV
             unzipThis
-            parse
+            parse('parks.csv', 'lib')
             render :nothing => true
         end
     end
+
+    def changeFavourite
+        parkID = params[:parkID]
+        userID = params[:userID]
+        if (Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first == nil)
+            Favourite.create(:uid => userID.to_s, :park_id => parkID.to_i)
+        
+         else 
+            Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first.delete
+        end
+
+    end
+
 end
 

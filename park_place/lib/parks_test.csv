@@ -1,3 +1,6 @@
 ParkID,Name,Official,StreetNumber,StreetName,EWStreet,NSStreet,GoogleMapDest,Hectare,NeighbourhoodName,NeighbourhoodURL,Advisories,Facilities,SpecialFeatures,Washrooms
-1,Arbutus Village Park,1,4202,Valley Drive,King Edward Avenue,Valley Drive,"49.249783,-123.155250",1.41,Arbutus Ridge,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,N
-2,Carnarvon Park,1,2995,W 19th Avenue,W 19th Avenue,Mackenzie Street,"49.256555,-123.171406",3.79,Arbutus Ridge,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,Y
+1,Test Park 1,1,4202,Valley Drive,King Edward Avenue,Valley Drive,"49.249783,-123.155250",1.41,NeighbourhoodName 1,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,N
+2,Test Park 2,1,2995,W 19th Avenue,W 19th Avenue,Mackenzie Street,"49.256555,-123.171406",3.79,NeighbourhoodName 2,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,Y
+3,Test Park 3,1,4780,Haggart Street,W 32nd Avenue,Haggart Street,"49.244397,-123.156429",2.89, 3,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,Y,N,Y
+4,Test Park 4,0,4309,Puget Drive,Puget Drive,MacDonald Street,"49.247723,-123.168194",0.09,NeighbourhoodName 5,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,N,N,Y
+5,Test Park 5,0,4301,Quesnel Drive,Quesnel Drive,MacKenzie Street,"49.247623,-123.169948",0.03,NeighbourhoodName 5,http://vancouver.ca/community_profiles/arbutus_ridge/index.htm,N,N,N,N
