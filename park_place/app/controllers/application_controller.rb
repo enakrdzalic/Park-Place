@@ -1,3 +1,7 @@
+require 'csv'
+require 'zip'
+require 'net/ftp'
+
 class ApplicationController < ActionController::Base
     # Prevent CSRF attacks by raising an exception.
     # For APIs, you may want to use :null_session instead.
@@ -8,7 +12,6 @@ class ApplicationController < ActionController::Base
     #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
     
     def getParksCSV
-        require 'net/ftp'
         ftp = Net::FTP.new
         ftp.connect("webftp.vancouver.ca",21)
         ftp.login()
@@ -22,8 +25,6 @@ class ApplicationController < ActionController::Base
     end
     
     def unzipThis
-        require 'zip'
-        
         this_dir = File.dirname(__FILE__)
         file_path = File.join(this_dir, 'lib','parks_csv.zip')
         dest_path = File.join(this_dir, 'lib')
@@ -40,14 +41,11 @@ class ApplicationController < ActionController::Base
     
     
     def parse(park_file_name,lib_name)
-        print "Hello"
-
-        require 'csv'
         this_dir = File.dirname(__FILE__)
         file_path = File.join(this_dir, lib_name, park_file_name)
         
         temp_index = 0
-        flash[:notice] = "Post successfully created"
+        # flash[:notice] = "Post successfully created"
         
         # Solution by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|
