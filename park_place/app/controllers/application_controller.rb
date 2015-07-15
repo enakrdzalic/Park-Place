@@ -40,6 +40,8 @@ class ApplicationController < ActionController::Base
     
     
     def parse(park_file_name,lib_name)
+        print "Hello"
+
         require 'csv'
         this_dir = File.dirname(__FILE__)
         file_path = File.join(this_dir, lib_name, park_file_name)
