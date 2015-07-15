@@ -277,7 +277,8 @@ function updateMap() {
   var parkIDs;
   var favParkIds;
   var favUserIds;
-  var favArray;
+  var favArray = [];
+  var userID;
   
 function initFavArrays(){
 
@@ -393,6 +394,7 @@ function testAPI() {
     FB.api('/me', function(response) {
         var userName = response.first_name;
         var id = response.id;
+        userID = id;
         initFavArrays();
         favArray = getFavourites(id);
         alert(favArray[0]);
@@ -461,23 +463,31 @@ function checkLoginStatus() {
 }
 
 
+function ajaxChangeFavourites(parkID) {
+  $.ajax({
+          url: '/ajax/changeFav',
+          type: 'POST',
+          dataType: 'json',
+          data: {parkID: parkID, userID: userID},
+        }).done(function(){
+
+        });
+}
+
 function changePic(parkID) {
     if (document.getElementById("heart"+ parkID).src == "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg") {
         document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg";
         document.getElementById("top_park"+ park_id).innerHTML = "Favourite";
 
-    //     $.ajax({
-    //       url: '/ajax/update',
-    //       type: 'POST',
-    //       dataType: 'json',
-    //       data: {parkID: parkID, userID: userID},
-    //     }).done(function(){
-
-    //     });
+        ajaxChangeFavourites(parkID);
+        
      }
     else {
         document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
         document.getElementById("top_park"+ parkID).innerHTML = "";
+
+        ajaxChangeFavourites(parkID);
+
       }
 }
 
