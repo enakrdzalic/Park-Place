@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'pages/index'
 
+  get 'pages/team'
+
 
   post '/ajax/update' => 'application#updateData'
 

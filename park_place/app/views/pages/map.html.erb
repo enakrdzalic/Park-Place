@@ -405,6 +405,12 @@
         }).done(function(){
         });
     }
+
+        function teamPage() {
+            window.location="http://localhost:3000/pages/team";
+        }
+
+
 </script>
 
 <body onload="checkLoginStatus()">
@@ -483,6 +489,7 @@
       <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
       <li>&copy; 404: Team Name Not Found</li>
       <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+      <li> <a href="#" onclick='teamPage();'>Team</a></li>
     </ul>
   </div>
 </footer>

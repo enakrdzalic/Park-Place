@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Park Place</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+
+  <script type="text/javascript">
+
+
+
+
+  </script>
+</head>
+
+<script>
+
+    function statusChangeCallback(response) {
+        console.log('statusChangeCallback');
+        console.log(response);
+        if (response.status === 'connected') {
+            displayNameAndImage();
+        } else if (response.status === 'not_authorized') {
+            document.getElementById('status').innerHTML = 'Please log ' +
+                    'into this app.';
+        } else {
+            document.getElementById('status').innerHTML = 'Please log ' +
+                    'into Facebook.';
+        }
+    }
+    function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+        });
+    }
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1458428974467904',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.2'
+        });
+        FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+
+    function checkLoginStatus() {
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'not_authorized') {
+                alert("Please log in and authorize Park Place.");
+                log_out();
+            }
+            else if (response.status === 'unknown') {
+                alert("Please log in and authorize Park Place.");
+                log_out();
+            }
+            else {}
+        });
+    }
+
+    function FBshare(){
+        FB.ui({
+            method: 'feed',
+            name: "Park Place",
+            link: "https://park-place.herokuapp.com/pages/index",
+            picture: 'http://discoveralbia.com/wp-content/uploads/2012/09/creatures-3-family-tree-header.png',
+            caption: "Come explore with me!",
+            description: "Park Place is the perfect web app to track your favourite parks and search for more! Which park will you go to today?"
+        }, function(response) {
+            if(response && response.post_id){}
+            else{}
+        });
+    }
+
+function returnToMap(){
+    window.location="http://localhost:3000/pages/map";
+}
+
+    function log_out(){
+        window.location="http://localhost:3000/pages/index";
+    }
+    
+    function poop1() {
+        document.getElementById('ena').src = "https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xta1/t39.1997-6/p160x160/10541011_1554246394804408_165772727_n.png";
+    }
+    function poop2(){
+        document.getElementById('sazi').src = "https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xfa1/t39.1997-6/p160x160/10540977_1554246434804404_362935018_n.png)";
+    }
+    function poop3(){
+        document.getElementById('amreen').src = "https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xaf1/t39.1997-6/p160x160/10333108_1554246424804405_2005645858_n.png";
+    }
+    function poop4(){
+        document.getElementById('chris').src = "https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpa1/t39.1997-6/p160x160/10540965_1554246344804413_1962051147_n.png";
+    }
+    function poop5(){
+        document.getElementById('danya').src = "https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xaf1/t39.1997-6/p160x160/10574682_1554246488137732_1210241959_n.png";
+    }
+    function poop6(){
+        document.getElementById('timmys').src = "https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xap1/t39.1997-6/p160x160/10541012_1554246498137731_1137800658_n.png";
+    }
+
+</script>
+
+<body onload="checkLoginStatus()">
+    <header id = "header">
+
+      <h1 style = "position:absolute;"><strong><a>Meet the Park Place Team!</a></strong></h1>
+
+      <nav id="nav">
+        <ul>
+          <div><a href="#" onclick="FBshare();" class="button special small"
+                  style="position:absolute;left:-255px;bottom:20px;">Share On Facebook</a></div>
+        </ul>
+      </nav>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<ul>
+  <div class = "row">
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ67o-Df_wG3F8GNmvYKwtTGXrwmBRGK4Vbx6xZt4Mhn80mkwkyxQoIobN" width= "100" height = "100" alt = "">
+    <div>
+      <h2><a>Amreen</a></h2>
+      <img id = "amreen" onclick = "poop3()" width = "400" height = "300" src = "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/155389_10150347096460296_6712388_n.jpg?oh=35ac1e807d9f20a0784077e4407c0319&oe=564F689F" alt = "Amreen">
+    </div>
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ67o-Df_wG3F8GNmvYKwtTGXrwmBRGK4Vbx6xZt4Mhn80mkwkyxQoIobN" width= "100" height = "100" alt = "">
+
+    <div>
+      <h2><a>Chris</a></h2>
+      <img id = "chris" onclick = "poop4()" width = "350" height = "350" src = "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10615575_10152326184063479_2962629508848212605_n.jpg?oh=41fd33d49ddb18bb8f1eb6c85a3d4b09&oe=561EC7A3" alt = "Chris" width = "150" height = "150">
+    </div>
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ67o-Df_wG3F8GNmvYKwtTGXrwmBRGK4Vbx6xZt4Mhn80mkwkyxQoIobN" width= "150" height = "100" alt = "">
+
+    <div>
+      <h2><a>Danya</a></h2>
+      <img id = "danya" onclick = "poop5()" width = "400" height = "350" src = "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10547654_10204068109963060_6176160205004403761_n.jpg?oh=dc4386070cddaacd01a08efa4073eea5&oe=5623A6A7" alt = "Danya">
+    </div> </div>
+
+  <br>
+
+  <div class = "row">
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ67o-Df_wG3F8GNmvYKwtTGXrwmBRGK4Vbx6xZt4Mhn80mkwkyxQoIobN" width= "100" height = "100" alt = "">
+
+    <div>
+      <h2><a>Ena</a></h2>
+      <img id = "ena" onclick = "poop1()" width = "350" height = "350" src = "https://scontent-sea1-1.xx.fbcdn.net/hphotos-ash2/t31.0-8/s960x960/1268532_10151866265030930_1347210148_o.jpg" alt = "Ena">
+    </div>
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ67o-Df_wG3F8GNmvYKwtTGXrwmBRGK4Vbx6xZt4Mhn80mkwkyxQoIobN" width= "150" height = "100" alt = "">
+    <div>
+      <h2><a>Sazi</a></h2>
+      <img id = "sazi" onclick = "poop2()"width = "350" height = "350" src = "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/10470887_10153141305150348_36091811230694064_o.jpg" alt = "Sazi">
+    </div>
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ67o-Df_wG3F8GNmvYKwtTGXrwmBRGK4Vbx6xZt4Mhn80mkwkyxQoIobN" width= "150" height = "100" alt = "">
+    <div>
+      <h2><a>Timmy's</a></h2>
+      <img id = "timmys" onclick = "poop6()" width = "400" height = "330" src = "http://i.huffpost.com/gen/1283408/images/o-TIM-HORTONS-facebook.jpg" alt = "Timmys">
+    </div>
+      </div>
+
+</ul>
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <footer id="footer">
+      <div class="container">
+        <a href="#" onclick='returnToMap();'>Return to Map</a>
+        <ul class="copyright">
+          <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+          <li>&copy; 404: Team Name Not Found</li>
+          <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>
