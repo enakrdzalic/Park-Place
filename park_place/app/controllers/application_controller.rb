@@ -3,13 +3,10 @@ require 'zip'
 require 'net/ftp'
 
 class ApplicationController < ActionController::Base
-    # Prevent CSRF attacks by raising an exception.
-    # For APIs, you may want to use :null_session instead.
     protect_from_forgery with: :exception
-    
     helper_method :updateData
-    
-    #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
+
+    ParkSizeBorder = 1.0
     
     def updateData
         canUpdate = params[:canUpdate]
@@ -67,7 +64,7 @@ private
     end
     
     def isLargePark(size)
-        return (size.to_f >= 1.0)
+        return (size.to_f >= ParkSizeBorder)
     end
 
     def parse(park_file_name,lib_name)
