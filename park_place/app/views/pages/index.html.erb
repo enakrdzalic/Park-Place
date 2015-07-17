@@ -1,33 +1,23 @@
 <!DOCTYPE HTML>
-<!--
-	Spatial by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head >
 		<title>Park Place</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
- <!-- Facebook SDK Init -->
-      <script>
+<script>
+
+  var app_id = '1458428974467904';
+
   function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    if (response.status === 'connected') {
-    } else if (response.status === 'not_authorized') {
+    if (response.status === 'connected') {} 
+    else if (response.status === 'not_authorized') {
       document.getElementById('status').innerHTML = 'Please log ' +
         'into this app.';
     } else {
       document.getElementById('status').innerHTML = 'Please log ' +
         'into Facebook.';
-
     }
   }
 
@@ -39,10 +29,9 @@
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '1458428974467904',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
+    appId      : app_id,
+    cookie     : true,  
+    xfbml      : true,  
     version    : 'v2.2' 
   });
 
@@ -53,7 +42,6 @@
 
   };
 
-  // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -66,80 +54,65 @@
   	window.location="http://localhost:3000/pages/map";
   }
 </script>
+</head>
 
 
-
-<!--  Facebook script stuff here
- -->
-
-	</head>
-	<body class="landing">
-
-		<!-- Header -->
-			
-
-		<!-- Banner -->
-			<section id="banner">
-				<h2>Park Place</h2>
-				<p>If only there was an app for parks... <br /> Oh wait, there is!</p>
-				<ul class="actions">
-					<!-- <li><a href="" onclick="fb_login()"class="button special big">Log in with Facebook</a></li> -->
-					<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" 
-					onlogin="goToMap();"></div>
-				</ul>
-			</section>
-
-
-<!-- One -->
-				<section id="one" class="wrapper style1">
-					<div class="container 75%">
-						<div class="row 200%">
-							<div class="6u 12u$(medium)">
-								<header class="major">
-									<h2>Discover new parks with Park Place</h2>
-									<p>and keep track of your favourites</p>
-								</header>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<p>These days, people are spending more and more time indoors. Whether we’re watching TV, gaming, or just browsing the internet, we’ve given up fresh air and natural light for a more artificial view of the world. Ironically, it is while using these same computers that we are told our actions could be detrimental to our physical and social health. It can be hard to resist the lure of stimulating gameplay and cute cat videos, but what if you had some help? Park Place keeps you connected with your favourite outdoor parks, and makes it easy for you to have a great time outside!
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Two -->
-				<section id="two" class="wrapper style2 special">
-					<div class="container">
-						<header class="major">
-							<h2>Explore Vancouver in a new way</h2>
-							<p>Here are some of the parks that are waiting for your exploration:</p>
-						</header>
-						<div class="row 150%">
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<%= image_tag("pic08.jpg", :alt => "") %>
-									<h3>Queen Elizabeth Park</h3>
-								</div>
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<div class="image fit captioned">
-									<%= image_tag("pic09.jpg", :alt => "") %>
-									<h3>Stanley Park</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="copyright">
-						<li>&copy; 404: Team Name Not Found</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-					</ul>
+<body class="landing">
+	<section id="banner">
+		<h2>Park Place</h2>
+		<p>If only there was an app for parks... <br /> Oh wait, there is!</p>
+		<ul class="actions">
+			<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" onlogin="goToMap();"></div>
+		</ul>
+	</section>
+	
+	<section id="one" class="wrapper style1">
+		<div class="container 75%">
+			<div class="row 200%">
+				<div class="6u 12u$(medium)">
+					<header class="major">
+						<h2>Discover new parks with Park Place</h2>
+						<p>and keep track of your favourites</p>
+					</header>
 				</div>
-			</footer>
+				<div class="6u$ 12u$(medium)">
+					<p>These days, people are spending more and more time indoors. Whether we’re watching TV, gaming, or just browsing the internet, we’ve given up fresh air and natural light for a more artificial view of the world. Ironically, it is while using these same computers that we are told our actions could be detrimental to our physical and social health. It can be hard to resist the lure of stimulating gameplay and cute cat videos, but what if you had some help? Park Place keeps you connected with your favourite outdoor parks, and makes it easy for you to have a great time outside!
+				</div>
+			</div>
+		</div>
+	</section>
 
-	</body>
+	<section id="two" class="wrapper style2 special">
+		<div class="container">
+			<header class="major">
+				<h2>Explore Vancouver in a new way</h2>
+				<p>Here are some of the parks that are waiting for your exploration:</p>
+			</header>
+			<div class="row 150%">
+				<div class="6u 12u$(xsmall)">
+					<div class="image fit captioned">
+						<%= image_tag("pic08.jpg", :alt => "") %>
+						<h3>Queen Elizabeth Park</h3>
+					</div>
+				</div>
+				<div class="6u$ 12u$(xsmall)">
+					<div class="image fit captioned">
+						<%= image_tag("pic09.jpg", :alt => "") %>
+						<h3>Stanley Park</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<ul class="copyright">
+				<li>&copy; 404: Team Name Not Found</li>
+				<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
 </html>

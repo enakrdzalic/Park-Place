@@ -3,14 +3,34 @@ require 'zip'
 require 'net/ftp'
 
 class ApplicationController < ActionController::Base
-    # Prevent CSRF attacks by raising an exception.
-    # For APIs, you may want to use :null_session instead.
     protect_from_forgery with: :exception
-    
     helper_method :updateData
+
+    ParkSizeBorder = 1.0
     
-    #File location :  ftp://webftp.vancouver.ca/opendata/csv/csv_parks_facilities.zip
-    
+    def updateData
+        canUpdate = params[:canUpdate]
+        if canUpdate
+            Park.delete_all
+            getParksCSV
+            unzipThis
+            parse('parks.csv', 'lib')
+            render :nothing => true
+        end
+    end
+
+    def changeFavourite
+        parkID = params[:parkID]
+        userID = params[:userID]
+        if (isNotFavourite(userID, parkID))
+            Favourite.create(:uid => userID.to_s, :park_id => parkID.to_i)
+         else 
+            Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first.delete
+        end
+    end
+
+private
+
     def getParksCSV
         ftp = Net::FTP.new
         ftp.connect("webftp.vancouver.ca",21)
@@ -38,25 +58,29 @@ class ApplicationController < ActionController::Base
             end
         end
     end
+
+    def hasWashroom(park_washroom)
+        return (park_washroom == "Y")
+    end
     
-    
+    def isLargePark(size)
+        return (size.to_f >= ParkSizeBorder)
+    end
+
     def parse(park_file_name,lib_name)
         this_dir = File.dirname(__FILE__)
         file_path = File.join(this_dir, lib_name, park_file_name)
         
         temp_index = 0
-        # flash[:notice] = "Post successfully created"
-        
-        # Solution by Tom De Leu 2012
         CSV.foreach(file_path, :headers => true) do |row|
             
             parkHasWashroom = nil;
-            if row[14] == "Y"
+            if (hasWashroom(row[14]))
                 parkHasWashroom = "Washroom"
             end
             
             parkIsLarge = "Small";
-            if row[8].to_f >= 1.0
+            if (isLargePark(row[8]))
                 parkIsLarge = "Large";
             end
             
@@ -67,32 +91,12 @@ class ApplicationController < ActionController::Base
                          :index => temp_index, :isLarge => parkIsLarge, :neighbourhood => row[9],
                          :parkID => row[0])
                          
-                         temp_index+=1
-        end
-        
-    end
-    
-    def updateData
-        canUpdate = params[:canUpdate]
-        if canUpdate
-            Park.delete_all
-            getParksCSV
-            unzipThis
-            parse('parks.csv', 'lib')
-            render :nothing => true
+            temp_index+=1
         end
     end
 
-    def changeFavourite
-        parkID = params[:parkID]
-        userID = params[:userID]
-        if (Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first == nil)
-            Favourite.create(:uid => userID.to_s, :park_id => parkID.to_i)
-        
-         else 
-            Favourite.where(["uid = ? and park_id = ?", userID, parkID]).first.delete
-        end
-
+    def isNotFavourite(user_id, park_id)
+        return (Favourite.where(["uid = ? and park_id = ?", user_id, park_id]).first == nil)
     end
 
 end

@@ -2,516 +2,492 @@
 <html>
 	<head>
 		<title>Park Place</title>
-     
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
-<style type="text/css">
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <style type="text/css">
       html, body, #map-canvas { height: 100%; width: 100%; padding: 0;}
     </style>
-
-			<script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
-</script>
+		<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+    </script>
 
     <% namesRuby = Array.new
-    latsRuby = Array.new
-    lngsRuby = Array.new
-    haveWashroomRuby = Array.new
-    idsRuby = Array.new
-    parkidsRuby = Array.new
-    favParkIdsRuby = Array.new
-    favUserIdsRuby = Array.new
+      latsRuby = Array.new
+      lngsRuby = Array.new
+      haveWashroomRuby = Array.new
+      idsRuby = Array.new
+      parkidsRuby = Array.new
+      favParkIdsRuby = Array.new
+      favUserIdsRuby = Array.new
     %>
-<% Park.all.each do |p| 
-    idsRuby.push(p.index)
-    namesRuby.push(p.name)
-    latsRuby.push(p.lat)
-    lngsRuby.push(p.lng)
-    parkidsRuby.push(p.parkID)
-    haveWashroomRuby.push(p.hasWashroom == "Washroom") %>
-  <% end -%>
 
-<% Favourite.all.each do |f|
-  favParkIdsRuby.push(f.park_id)
-  favUserIdsRuby.push(f.uid) %>
-  <% end -%>
-
-<script type="text/javascript">
-
-  var map;
-  var markers;
-  var names;
-  var lats;
-  var lngs;
-  var haveWashroom;
-  var ids;
-  var length;
-  
-
-  var styles = [
-  {
-    stylers: [
-    { hue: "#00ffe6" },
-    { saturation: -20 }
-    ]
-  },{
-    featureType: "road",
-    elementType: "geometry",
-    stylers: [
-    { lightness: 100 },
-    { visibility: "simplified" }
-    ]
-  },{
-    featureType: "road",
-    elementType: "labels",
-    stylers: [
-    { visibility: "off" }
-    ]
-  }
-  ];
-
-    // MAP CODE
-
-function initMap() {
-	var mapOptions = {
-		center: { lat: 49.261226, lng: -123.1139268},
-		zoom: 12
-	};
-   map = new google.maps.Map(document.getElementById('map-canvas'),
-		mapOptions);
-
-	map.setOptions({styles: styles});
-}
-
-function addMarkersToMap(map) {
-	for (i = 0; i<length; i++){
-		markers[i].setmap(map);
-	}
-}
-
-function addMarkerListeners(map, markers, curOpen, infoWindows) {
-	markers.forEach(function(marker){
-		google.maps.event.addListener(markers[marker.id], 'click', function() {
-			if (curOpen == infoWindows[marker.id]) {
-				curOpen.close();
-				curOpen = null;
-			} else {
-				if (curOpen){
-					curOpen.close();
-				}
-				infoWindows[marker.id].open(map,markers[marker.id]);
-				curOpen = infoWindows[marker.id];
-			}
-		});
-	});
-}
-
-function makeMarkers(length, markers, lats, lngs, map, names, ids) {
-	for (i = 0; i < length; i++) {
-		markers.push(new google.maps.Marker({
-			position: new google.maps.LatLng(lats[i], lngs[i]),
-			map: map,
-			title: names[i],
-			id: ids[i],
-			icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
-		}));
-
-	}
-}
-
-function initArrays() {
-  markers = new Array();
-  names = <%= raw namesRuby%>;
-  lats = <%= raw latsRuby %>;
-  lngs = <%= raw lngsRuby %>;
-  haveWashroom = <%= raw haveWashroomRuby %>;
-  ids = <%= raw idsRuby %>;
-  length = names.length;
-}
-
-function get_filtered_data(){
-     var parksTable = $("#parks_list").dataTable();
-     var filteredrows = $("#parks_list").dataTable().$('tr', {"filter": "applied"});
-
-     markers = new Array();
-     var i;
-     for (i = 0; i < filteredrows.length;  i++){
-
-        var park = parksTable.fnGetData(filteredrows[i]);
-        var name = park[0];
-        var facilities = park[2];
-        var lat = park[5];
-        var lng = park[6];
-
-        names[i] = park[0];
-        lats[i] = park[5];
-        lngs[i] = park[6];
-        if (park[2] == "Washroom") {
-          haveWashroom[i] = 1;
-        } else haveWashroom[i] = 0;
-        ids[i] = i;
-    } length = i;
-}
-
-function hasWashroom(index) {
-  if (haveWashroom[index] == 1) return 'yes';
-  else return 'no';
-}
-
-function getName(index) {
-  return names[index];
-}
-
-function getContentString(index){
-  return '<div id="content">'+
-  '<div id="siteNotice">'+
-  '</div>'+
-  '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
-  '<div id="bodyContent">'+
-  'Washroom on site: ' + hasWashroom(index) +
-  '</div>'+
-  '</div>';
-}
-
-function makeInfoWindows(markers, infoWindows, map, curOpen) {
-  for (i = 0; i < length; i++) {
-    infoWindows.push(new google.maps.InfoWindow({
-      content: getContentString(i)
-    }));
-  }
-}
-
-function initialize() {
-	initMap();
-  initArrays();
-
-	makeMarkers(length, markers, lats, lngs, map, names, ids);
-	var infoWindows = new Array();
-	var curOpen = null;
-
-	makeInfoWindows(markers, infoWindows, map, curOpen);
-	addMarkerListeners(map, markers, curOpen, infoWindows);
-	addMarkersToMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-function resetParkArrays() {
-  names = [];
-  lats = [];
-  lngs = [];
-  haveWashroom = [];
-  ids = [];
-  length = 0;
-}
-
-function addParksInTableToArrays() {
-  names = ["Arbutus Village Park"];
-  lats = [49.249783];
-  lngs = [-123.155250];
-  haveWashroom = [1];
-  ids = [0];
-  length = 1;
-}
-
-function refreshMap() {
-  makeMarkers(length, markers, lats, lngs, map, names, ids);
-  var infoWindows = new Array();
-  var curOpen = null;
-
-  makeInfoWindows(markers, infoWindows, map, curOpen);
-  addMarkerListeners(map, markers, curOpen, infoWindows);
-  addMarkersToMap(map);
-}
-
-function setAllMap(map) {
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-  }
-}
-
-function clearMarkers() {
-  setAllMap(null);
-}
-
-function deleteMarkers() {
-  clearMarkers();
-  markers = [];
-}
-
-function updateMap() {
-  deleteMarkers();
-  resetParkArrays();
-  get_filtered_data();
-  refreshMap();
-}
-
-</script>
-
-</head>
-
-<script type="text/javascript">
-
-  var parkIDs;
-  var favParkIds;
-  var favUserIds;
-  var favArray = [];
-  var userID;
-  
-function initFavArrays(){
-  parkIDs = <%= raw parkidsRuby %>;
-  favParkIds = <%= raw favParkIdsRuby %>;
-  favUserIds = <%= raw favUserIdsRuby %>;
-}
-
-
-function promptPassword(){
-  var password = prompt("Please Enter Admin Password","");
-  var correctPassword = 'Ihategit';
-
-  if (password == correctPassword){
-  	var canUpdate = true;
-
-  	$.ajax({
-  		url: '/ajax/update',
-  		type: 'POST',
-  		dataType: 'json',
-  		data: {canUpdate: canUpdate},
-  	}).done(function(){
-
-  	});
-
-  	alert('Data is being updated...')
-  	window.location.reload();
-}
-
-else if (password == null){
-	return;
-}
-else {
-	alert("Incorrect Password");
-}
-}
-
-
-function log_out(){
-	window.location="http://localhost:3000/pages/index";
-}
-
-
-function statusChangeCallback(response) {
-	console.log('statusChangeCallback');
-	console.log(response);
-  if (response.status === 'connected') {
-    displayNameAndImage();
-  } else if (response.status === 'not_authorized') {
-  document.getElementById('status').innerHTML = 'Please log ' +
-  'into this app.';
-  } else {
-  document.getElementById('status').innerHTML = 'Please log ' +
-  'into Facebook.';
-
-  }
-}
-
-
-function checkLoginState() {
-	FB.getLoginStatus(function(response) {
-		statusChangeCallback(response);
-	});
-}
-
-window.fbAsyncInit = function() {
-	FB.init({
-		appId      : '1458428974467904',
-cookie     : true,  
-xfbml      : true,
-version    : 'v2.2'
-});
-
-FB.getLoginStatus(function(response) {
-	statusChangeCallback(response);
-});
-
-};
-
-(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/en_US/sdk.js";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-function displayWelcomeMessage(name) {
-  document.getElementById("h1").innerHTML = "Welcome to Park Place, " + name + "!";
-
-}
-
-function displayUserImage(imgID) {
-  document.getElementById("pic").src = "https://graph.facebook.com/" + imgID + "/picture?type=normal";
-}
-
-function displayNameAndImage() {
-    FB.api('/me', function(response) {
-      displayWelcomeMessage(response.first_name);
-      displayUserImage(response.id);
-
-      var userName = response.first_name;
-      userID = response.id;
-      initFavArrays();
-      favArray = getFavourites(userID);
-      for (var i=0 ; i<favArray.length ; i++){
-        showFavourites(favArray[i]);
-      }
-      document.getElementById("h1").innerHTML = "Welcome to Park Place, " + userName + "!";
-    });
-  }
-
- 
-function checkLoginStatus() {
-	FB.getLoginStatus(function(response) {
-		if (response.status === 'not_authorized') {
-			alert("Please log in and authorize Park Place.");
-			log_out();
-		}
-		else if (response.status === 'unknown') {
-			alert("Please log in and authorize Park Place.");
-			log_out();
-		}
-		else {}
-	});
-}
-
- $(document).ready(function() {
-    $('#parks_list').dataTable( {
-        "paging":   false,
-
-        "columnDefs": [
-        {
-                "targets": [ 4 ],
-                "searchable": false,
-                "orderable": false
-
-            },
-            {
-                "targets": [ 5 ],
-                "visible": false,
-                "searchable": false
-
-            },
-            {
-                "targets": [ 6 ],
-                "visible": false,
-                "searchable": false
-
-            }
+    <% Park.all.each do |p| 
+      idsRuby.push(p.index)
+      namesRuby.push(p.name)
+      latsRuby.push(p.lat)
+      lngsRuby.push(p.lng)
+      parkidsRuby.push(p.parkID)
+      haveWashroomRuby.push(p.hasWashroom == "Washroom") %>
+    <% end -%>
+
+    <% Favourite.all.each do |f|
+      favParkIdsRuby.push(f.park_id)
+      favUserIdsRuby.push(f.uid) %>
+    <% end -%>
+
+    <script type="text/javascript">
+
+      var mapLat = 49.261226;
+      var mapLng = -123.1139268;
+      var mapZoom = 12;
+      var mapOptions = {
+        center: { lat: mapLat, lng: mapLng},
+        zoom: mapZoom
+      };
+
+      var mapIcon = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+
+      var map;
+      var markers;
+      var names;
+      var lats;
+      var lngs;
+      var haveWashroom;
+      var ids;
+      var length;
+      var infoWindows;
+
+
+      var styles = [
+      {
+        stylers: [
+        { hue: "#00ffe6" },
+        { saturation: -20 }
         ]
+      },{
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+        { lightness: 100 },
+        { visibility: "simplified" }
+        ]
+      },{
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+        { visibility: "off" }
+        ]
+      }
+      ];
 
-    } );
-} );
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        map.setOptions({styles: styles});
+      }
 
- function FBshare(){
-    FB.ui({
-        method: 'feed',
-        name: "Park Place",
-        link: "https://park-place.herokuapp.com/pages/index",
-        picture: 'http://discoveralbia.com/wp-content/uploads/2012/09/creatures-3-family-tree-header.png',
-        caption: "Come explore with me!",
-        description: "Park Place is the perfect web app to track your favourite parks and search for more! Which park will you go to today?"
-    }, function(response) {
-        if(response && response.post_id){}
-        else{}
-    });
-}
+      function initArrays() {
+        markers = new Array();
+        names = <%= raw namesRuby%>;
+        lats = <%= raw latsRuby %>;
+        lngs = <%= raw lngsRuby %>;
+        haveWashroom = <%= raw haveWashroomRuby %>;
+        ids = <%= raw idsRuby %>;
+        infoWindows = new Array();
+        length = names.length;
+      }
 
-function showFavourites(parkID) {
-    document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
-    document.getElementById("top_park"+ parkID).innerHTML = "Favourite";
-}
+      function addMarkersToMap(map) {
+      	for (i = 0; i<length; i++){
+      		markers[i].setmap(map);
+      	}
+      }
 
-function changePic(parkID) {
-    if (document.getElementById("heart"+ parkID).src == "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg") {
-        document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg";
-        document.getElementById("top_park"+ parkID).innerHTML = "";
-  }
-    else {
-        document.getElementById("heart"+ parkID).src = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
-        document.getElementById("top_park"+ parkID).innerHTML = "Favourite";
-  }    
-  ajaxChangeFavourites(parkID);     
+      function curOpenIsBeingClicked(curOpen, infoWindow) {
+        return (curOpen == infoWindow);
+      }
 
-}
+      function addMarkerListeners(map, markers, curOpen, infoWindows) {
+      	markers.forEach(function(marker){
+      		google.maps.event.addListener(markers[marker.id], 'click', function() {
+      			if (curOpenIsBeingClicked(curOpen, infoWindows[marker.id])) {
+      				curOpen.close();
+      				curOpen = null;
+      			} else {
+      				if (curOpen){
+      					curOpen.close();
+      				}
+      				infoWindows[marker.id].open(map,markers[marker.id]);
+      				curOpen = infoWindows[marker.id];
+      			}
+      		});
+      	});
+      }
 
-function getFavourites(id) {
-  var returnArray = [];
+      function makeMarkers(length, markers, lats, lngs, map, names, ids) {
+      	for (i = 0; i < length; i++) {
+      		markers.push(new google.maps.Marker({
+      			position: new google.maps.LatLng(lats[i], lngs[i]),
+      			map: map,
+      			title: names[i],
+      			id: ids[i],
+      			icon: mapIcon
+      		}));
+
+      	}
+      }
+
+      function hasWashroom(index) {
+        if (haveWashroom[index] == 1) return 'yes';
+        else return 'no';
+      }
+
+      function getName(index) {
+        return names[index];
+      }
+
+      function getContentString(index){
+        return '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">'+ getName(index) +'</h1>'+
+        '<div id="bodyContent">'+
+        'Washroom on site: ' + hasWashroom(index) +
+        '</div>'+
+        '</div>';
+      }
+
+      function makeInfoWindows(markers, infoWindows, map, curOpen) {
+        for (i = 0; i < length; i++) {
+          infoWindows.push(new google.maps.InfoWindow({
+            content: getContentString(i)
+          }));
+        }
+      }
+
+      function initialize() {
+      	initMap();
+        initArrays();
+
+      	makeMarkers(length, markers, lats, lngs, map, names, ids);
+      	var curOpen = null;
+
+      	makeInfoWindows(markers, infoWindows, map, curOpen);
+      	addMarkerListeners(map, markers, curOpen, infoWindows);
+      	addMarkersToMap(map);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+      function resetParkArrays() {
+        names = [];
+        lats = [];
+        lngs = [];
+        haveWashroom = [];
+        ids = [];
+        markers = [];
+        length = 0;
+      }
+
+      function refreshMap() {
+        makeMarkers(length, markers, lats, lngs, map, names, ids);
+        var infoWindows = new Array();
+        var curOpen = null;
+
+        makeInfoWindows(markers, infoWindows, map, curOpen);
+        addMarkerListeners(map, markers, curOpen, infoWindows);
+        addMarkersToMap(map);
+      }
+
+      function setAllMap(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
+
+      function clearMarkers() {
+        setAllMap(null);
+      }
+
+      function deleteMarkers() {
+        clearMarkers();
+        markers = [];
+      }
+
+      function getFilteredData(){
+           var parksTable = $("#parks_list").dataTable();
+           var filteredrows = $("#parks_list").dataTable().$('tr', {"filter": "applied"});
+
+           var i;
+           for (i = 0; i < filteredrows.length;  i++){
+              var park = parksTable.fnGetData(filteredrows[i]);
+              var name = park[0];
+              var facilities = park[2];
+              var lat = park[5];
+              var lng = park[6];
+
+              names[i] = park[0];
+              lats[i] = park[5];
+              lngs[i] = park[6];
+              if (park[2] == "Washroom") {
+                haveWashroom[i] = 1;
+              } else haveWashroom[i] = 0;
+              ids[i] = i;
+          } length = i;
+      }
+
+      function updateMap() {
+        deleteMarkers();
+        resetParkArrays();
+        getFilteredData();
+        refreshMap();
+      }
+
+    </script>
+
+  </head>
+
+    <script type="text/javascript">
+
+      var app_id = '1458428974467904';
+      var parkIDs;
+      var favParkIds;
+      var favUserIds;
+      var favArray = [];
+      var userID;
+      var correctPassword = 'Ihategit';
+      
+      var fullHeartPic = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Nuvola_emblem-favorite.svg";
+      var emptyHeartPic = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg";
   
-  for (var j=0; j<parkIDs.length; j++) {
-    for (var i=0; i<favParkIds.length; i++) {
-      if (favParkIds[i] == parkIDs[j] && favUserIds[i] == id.toString()) {
-        returnArray.push(parkIDs[j])
+    function initFavArrays(){
+      parkIDs = <%= raw parkidsRuby %>;
+      favParkIds = <%= raw favParkIdsRuby %>;
+      favUserIds = <%= raw favUserIdsRuby %>;
+    }
+
+    function passwordEmpty(password) {
+      return (password == null) || (password == "");
+    }
+
+    function promptPassword(){
+      var password = prompt("Please Enter Admin Password","");
+
+      if (password == correctPassword){
+        var canUpdate = true;
+        $.ajax({
+          url: '/ajax/update',
+          type: 'POST',
+          dataType: 'json',
+          data: {canUpdate: canUpdate},
+        }).done(function(){
+        });
+        alert('Data is being updated...')
+        window.location.reload();
+      }
+      else if (passwordEmpty){
+        return;
+      }
+      else {
+        alert("Incorrect Password");
       }
     }
-  }
-  
-  return returnArray;
-}
 
-function showImage(park_id) {
-  return "<img id = 'heart"+ park_id + "' height='30' width='30' align='center' src='https://upload.wikimedia.org/wikipedia/commons/e/e9/Nuvola_emblem-favorite-white_heart.svg' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park"+ park_id+"' style='visibility:hidden;'></a></img>"
-}
 
-function ajaxChangeFavourites(parkID) {
-  $.ajax({
+    function log_out(){
+      window.location="http://localhost:3000/pages/index";
+    }
+
+
+    function statusChangeCallback(response) {
+      if (response.status === 'connected') {
+        displayNameAndImage();
+      } else if (response.status === 'not_authorized') {
+      document.getElementById('status').innerHTML = 'Please log ' +
+      'into this app.';
+      } else {
+      document.getElementById('status').innerHTML = 'Please log ' +
+      'into Facebook.';
+
+      }
+    }
+
+
+    function checkLoginState() {
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    }
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1458428974467904',
+        cookie     : true,  
+        xfbml      : true,
+        version    : 'v2.2'
+        });
+
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    function displayWelcomeMessage(name) {
+      document.getElementById("h1").innerHTML = "Welcome to Park Place, " + name + "!";
+    }
+
+    function displayUserImage(imgID) {
+      document.getElementById("pic").src = "https://graph.facebook.com/" + imgID + "/picture?type=normal";
+    }
+
+    function displayNameAndImage() {
+      FB.api('/me', function(response) {
+        displayWelcomeMessage(response.first_name);
+        displayUserImage(response.id);
+
+        userID = response.id;
+        initFavArrays();
+        favArray = getFavourites(userID);
+        for (var i=0 ; i<favArray.length ; i++){
+          showFavourites(favArray[i]);
+        }
+      });
+    }
+
+ 
+    function checkLoginStatus() {
+      FB.getLoginStatus(function(response) {
+        if (response.status === 'not_authorized') {
+          alert("Please log in and authorize Park Place.");
+          log_out();
+        }
+        else if (response.status === 'unknown') {
+          alert("Please log in and authorize Park Place.");
+          log_out();
+        }
+        else {}
+      });
+    }
+
+   $(document).ready(function() {
+      $('#parks_list').dataTable( {
+          "paging":   false,
+
+          "columnDefs": [
+          {
+                  "targets": [ 4 ],
+                  "searchable": false,
+                  "orderable": false
+
+              },
+              {
+                  "targets": [ 5 ],
+                  "visible": false,
+                  "searchable": false
+
+              },
+              {
+                  "targets": [ 6 ],
+                  "visible": false,
+                  "searchable": false
+
+              }
+          ]
+
+      } );
+  } );
+
+   function FBshare(){
+      FB.ui({
+          method: 'feed',
+          name: "Park Place",
+          link: "https://park-place.herokuapp.com/pages/index",
+          picture: 'http://discoveralbia.com/wp-content/uploads/2012/09/creatures-3-family-tree-header.png',
+          caption: "Come explore with me!",
+          description: "Park Place is the perfect web app to track your favourite parks and search for more! Which park will you go to today?"
+      }, function(response) {
+          if(response && response.post_id){}
+          else{}
+      });
+    }
+
+    function showFavourites(parkID) {
+      document.getElementById("heart"+ parkID).src = fullHeartPic;
+      document.getElementById("top_park"+ parkID).innerHTML = "Favourite";
+    }
+
+    function changePic(parkID) {
+        if (document.getElementById("heart"+ parkID).src == fullHeartPic) {
+            document.getElementById("heart"+ parkID).src = emptyHeartPic;
+            document.getElementById("top_park"+ parkID).innerHTML = "";
+      }
+        else {
+            document.getElementById("heart"+ parkID).src = fullHeartPic;
+            document.getElementById("top_park"+ parkID).innerHTML = "Favourite";
+      }    
+      ajaxChangeFavourites(parkID);     
+
+    }
+
+    function getFavourites(id) {
+      var returnArray = [];
+      for (var j=0; j<parkIDs.length; j++) {
+        for (var i=0; i<favParkIds.length; i++) {
+          if (favParkIds[i] == parkIDs[j] && favUserIds[i] == id.toString()) {
+            returnArray.push(parkIDs[j])
+          }
+        }
+      }
+      return returnArray;
+    }
+
+    function showImage(park_id) {
+      return "<img id = 'heart"+ park_id + "' height='30' width='30' align='center' src='"+ emptyHeartPic +"' alt='Submit' onclick = 'changePic("+ park_id + ")'><a id='top_park"+ park_id+"' style='visibility:hidden;'></a></img>"
+    }
+
+    function ajaxChangeFavourites(parkID) {
+      $.ajax({
           url: '/ajax/changeFav',
           type: 'POST',
           dataType: 'json',
           data: {parkID: parkID, userID: userID},
         }).done(function(){
-
-        });
-}
-
-
+      });
+    }
 </script>
 
-<body onload="checkLoginStatus()">
+  <body onload="checkLoginStatus()">
+    <header id="header">
+      <div>
+        <img id = "pic" src = "" alt = "" width = "54" height = "54">
+      </div>
+        <h1 style ="position:absolute;"><strong><a id ="h1"></a></strong></h1>
 
-  <header id="header">
-    <div>
+      <nav id="nav">
+        <ul>
+          <div><a href="#" onclick="FBshare();" class="button special small" id="share">Share On Facebook</a></div>
+          <div><a href="#" onclick="updateMap();" class="button special small" id="update">Update Map</a></div>
+        </ul>
+      </nav>
+    </header>
 
-      <img id = "pic" src = ""
-      alt = "" width = "54" height = "54" style = "position:absolute; right: 500px; bottom: 20px; ">
-    </div>
+    <br/><br/><br/>
 
-        <h1 style = "position:absolute;"><strong><a id = "h1"></a></strong></h1>
+    <div id="map-canvas" style="width:57%; height:700px; float:left;"></div>
 
-
-        <nav id="nav">
-          <ul>
-            <!-- <li><a href="#" onclick= "log_out()">Log Out</a></li> -->
-              <div><a href="#" onclick="FBshare();" class="button special small"
-                style="position:absolute;left:-455px;bottom:20px;">Share On Facebook</a></div>
-              <div><a href="#" onclick="updateMap();" class="button special small"
-                style="position:absolute;left:-175px;bottom:20px;">Update Map</a></div>
-          </ul>
-        </nav>
-      </header>
-
-<br/><br/><br/>
-
-
-        <div id="map-canvas" style="width:57%; height:700px; float:left;"></div>
-
-        <table style="float:right; width:43%" id="scrollable">
-          <tr>
-            <td> 
-              <table id="parks_list">
-                <thead>
+    <table style="float:right; width:43%" id="scrollable">
+      <tr>
+        <td> 
+          <table id="parks_list">
+            <thead>
                 <tr>
                   <th>Park Name</th>
                   <th>Neighborhood</th>
@@ -521,8 +497,8 @@ function ajaxChangeFavourites(parkID) {
                   <th>lat</th>
                   <th>lng</th>
                 </tr>
-                </thead>
-                <tbody>
+              </thead>
+              <tbody>
                 <% @parks.each do |park| %>
                     <tr>
                       <td><%= park.name %></td>
@@ -530,35 +506,35 @@ function ajaxChangeFavourites(parkID) {
                       <td><%= park.hasWashroom %></td>
                       <td><%= park.isLarge %></td>
                       <td><% parkIndex = park.parkID%>
-                        <a><script>
-                        var park_index = <%= raw parkIndex %>;
-                        document.write(showImage(park_index));</script></a></td>
+                        <a>
+                          <script>
+                            var park_index = <%= raw parkIndex %>;
+                            document.write(showImage(park_index));
+                          </script>
+                        </a>
+                      </td>
                       <td><%= park.lat %></td>
                       <td><%= park.lng %></td>
                     </tr>
-                <% end %>
+                  <% end %>
                 </tbody>
               </table>
             </td>
           </tr>
         </table>
 
-<table></table>
+    <table></table>
 
-<footer id="footer">
-  <div class="container">
-    <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"
-             onlogin="log_out();"
-             style="position:relative;"
-        ></div>
-    <ul class="copyright">
-      <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-      <li>&copy; 404: Team Name Not Found</li>
-      <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
-    </ul>
-  </div>
-</footer>
-
-</body>
-
+    <footer id="footer">
+      <div class="container">
+        <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" onlogin="log_out();" style="position:relative;">
+        </div>
+        <ul class="copyright">
+          <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+          <li>&copy; 404: Team Name Not Found</li>
+          <li> <a href="#" onclick='promptPassword();'>Refresh Data</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

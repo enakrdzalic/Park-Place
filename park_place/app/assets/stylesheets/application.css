@@ -15,6 +15,18 @@
  *= require dataTables/jquery.dataTables
  */
 
+a#share {
+	position:absolute;left:-455px;bottom:20px;
+}
+
+a#update {
+	position:absolute;left:-175px;bottom:20px;
+}
+
+img#pic {
+	position:absolute; right: 500px; bottom: 20px; 
+}
+
 #hideAll
  {
    position: fixed;
